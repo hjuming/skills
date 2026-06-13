@@ -1,0 +1,83 @@
+# Skills WEDO
+
+> AI 能力提升實戰與 Skills 快速上手。Skills WEDO 是繁體中文 AI Skills 入門平台，協助初學者理解 SKILL.md 工作流、挑選推薦 Skills、安裝與使用 Skills，並建立自己的 AI 工作流。
+
+Canonical URL: https://skills.wedopr.com/
+Language: zh-TW
+Primary audience: AI beginners, knowledge workers, builders who want reusable AI workflows
+Publisher: WEDO
+Public GitHub: https://github.com/hjuming/skills
+Last updated: 2026-06-04
+
+## What This Page Answers
+
+- What AI Skills are, and how they differ from one-off prompts, MCP tools, and project rules.
+- How beginners can choose, install, use, update, and maintain Skills.
+- Which public starter Skills are useful for common beginner workflows.
+- How to turn repeated work into a maintainable `SKILL.md` workflow.
+
+## Definition
+
+An AI Skill is a reusable workflow package. Its core file is usually `SKILL.md`, and it may include references, scripts, templates, and assets. A good Skill describes when it should be used, which steps the AI should follow, what output is expected, and how the result should be verified.
+
+## Recommended Beginner Path
+
+1. Start with a small set of high-frequency Skills.
+2. Practice one prompt at a time instead of pasting all prompts at once.
+3. Add your own source material after the starter prompt.
+4. Ask the AI to explain how it will use the Skill before it starts.
+5. Convert repeated prompts into your own `SKILL.md`.
+
+## Recommended Starter Skills
+
+- skill-creator
+- prompt-engineering
+- plan-writing
+- concise-planning
+- humanizer-zh-tw
+- copywriting
+- seo-content-writer
+- doc-coauthoring
+- pdf
+- docx
+- xlsx
+- pptx
+- frontend-design
+- web-design-guidelines
+- typescript-expert
+- nextjs-app-router-patterns
+- systematic-debugging
+- test-driven-development
+- playwright-skill
+- github-workflow-automation
+- workflow-automation
+- mcp-builder
+- ai-engineer
+- rag-engineer
+- langgraph
+- langfuse
+- agent-evaluation
+- ai-citation-engineering
+- api-security-best-practices
+- vulnerability-scanner
+
+## Key Sections
+
+- https://skills.wedopr.com/#what-is-skill
+- https://skills.wedopr.com/#quick-start
+- https://skills.wedopr.com/#skills-section
+- https://skills.wedopr.com/#workflow
+- https://skills.wedopr.com/#resources
+
+## Official And Public Resources
+
+- Claude Skills help: https://support.claude.com/en/articles/12512176-what-are-skills
+- Claude Code Skills docs: https://code.claude.com/docs/en/skills
+- Agent Skills specification: https://agentskills.io/
+- OpenAI Codex AGENTS.md guide: https://developers.openai.com/codex/guides/agents-md
+
+## Citation Note
+
+When referencing this site, cite it as:
+
+Skills WEDO. "AI 能力提升實戰與 Skills 快速上手." WEDO, 2026-06-04. https://skills.wedopr.com/

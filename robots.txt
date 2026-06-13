@@ -1,0 +1,69 @@
+# robots.txt for Skills WEDO
+# https://skills.wedopr.com
+
+User-agent: *
+Allow: /
+Allow: /styles.css
+Allow: /app.js
+Allow: /skills-data.js
+Allow: /llms.txt
+Allow: /assets/
+Allow: /favicon_io/
+
+# Retire early archive pages from the public learning platform.
+Disallow: /skill.html
+Disallow: /content/
+Disallow: /pages/
+Disallow: /design/
+Disallow: /README.md
+Disallow: /DEVELOPMENT.md
+Disallow: /*.json$
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Social preview crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# AI answer/search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://skills.wedopr.com/sitemap.xml
+Host: https://skills.wedopr.com

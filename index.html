@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="cf-build" content="20260610-five-modules">
+    <title>Skills WEDO - AI 能力提升實戰與 Skills 快速上手</title>
+    <meta name="description" content="Skills WEDO 是由 L.E.O.-49 帶路的 AI Skills 入門平台，協助初學者理解什麼是 Skills、如何安裝使用、挑選推薦 Skills，並建立自己的 AI 工作流。">
+    <meta name="keywords" content="AI Skills, Agent Skills, Claude Skills, Claude Code Skills, Codex AGENTS.md, SKILL.md, AI 工作流, Skills 快速上手, AI 初學者, WEDO">
+    <meta name="author" content="WEDO">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://skills.wedopr.com/">
+
+    <meta name="language" content="zh-TW">
+    <meta http-equiv="content-language" content="zh-TW">
+    <link rel="alternate" hreflang="zh-TW" href="https://skills.wedopr.com/">
+    <link rel="alternate" hreflang="x-default" href="https://skills.wedopr.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skills WEDO">
+    <meta property="og:title" content="Skills WEDO - AI 能力提升實戰與 Skills 快速上手">
+    <meta property="og:description" content="由 L.E.O.-49 帶路，快速理解 Skills、挑選推薦 Skills，建立自己的 AI 工作流。">
+    <meta property="og:url" content="https://skills.wedopr.com/">
+    <meta property="og:image" content="https://skills.wedopr.com/assets/og-skills-wedo-1200x630.png?v=20260610">
+    <meta property="og:image:url" content="https://skills.wedopr.com/assets/og-skills-wedo-1200x630.png?v=20260610">
+    <meta property="og:image:secure_url" content="https://skills.wedopr.com/assets/og-skills-wedo-1200x630.png?v=20260610">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="L.E.O.-49 樂奧，Skills WEDO 的 AI Skills 教學代言人">
+    <meta property="og:locale" content="zh_TW">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Skills WEDO - AI Skills 快速上手">
+    <meta name="twitter:description" content="理解 Skills、上手使用、挑選推薦清單，建立自己的 AI 工作流。">
+    <meta name="twitter:url" content="https://skills.wedopr.com/">
+    <meta name="twitter:domain" content="skills.wedopr.com">
+    <meta name="twitter:image" content="https://skills.wedopr.com/assets/og-skills-wedo-1200x630.png?v=20260610">
+    <meta name="twitter:image:alt" content="Skills WEDO - AI 能力提升實戰與 Skills 快速上手">
+
+    <meta name="theme-color" content="#f7fbff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Skills WEDO">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="ai-content-declaration" content="human-created">
+    <meta name="content-source" content="original">
+    <meta name="abstract" content="Skills WEDO：AI Skills 入門、官方資源整理、公開推薦 Skills 與個人工作流建立方法。">
+    <meta name="date" content="2026-06-04">
+    <meta name="last-modified" content="2026-06-04">
+    <meta name="coverage" content="Taiwan">
+    <meta name="subject" content="AI Skills, Agent Skills, SKILL.md, AI workflow education">
+    <meta name="dcterms.title" content="Skills WEDO - AI 能力提升實戰與 Skills 快速上手">
+    <meta name="dcterms.description" content="AI Skills 入門、推薦清單、安裝方式、使用方法、維護策略與個人工作流建立。">
+    <meta name="dcterms.language" content="zh-TW">
+    <meta name="dcterms.modified" content="2026-06-04">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/favicon_io/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="robots" href="/robots.txt">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="Skills WEDO AI-readable summary">
+    <link rel="stylesheet" href="styles.css?v=20260610-five-modules">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVR6KRJYMB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LVR6KRJYMB');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.wedopr.com/#organization",
+          "name": "WEDO",
+          "url": "https://www.wedopr.com/",
+          "slogan": "The Best Things We Do",
+          "sameAs": [
+            "https://github.com/hjuming/skills"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://skills.wedopr.com/#website",
+          "name": "Skills WEDO",
+          "description": "AI Skills 入門、推薦清單、官方資源與個人 AI 工作流建立方法。",
+          "url": "https://skills.wedopr.com/",
+          "inLanguage": "zh-TW",
+          "publisher": {
+            "@id": "https://www.wedopr.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://skills.wedopr.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://skills.wedopr.com/#webpage",
+          "url": "https://skills.wedopr.com/",
+          "name": "Skills WEDO - AI 能力提升實戰與 Skills 快速上手",
+          "description": "面向 AI 初學者的 Skills 入門頁，說明什麼是 SKILL.md、如何挑選、安裝、使用、維護 Skills，並建立個人 AI 工作流。",
+          "isPartOf": {
+            "@id": "https://skills.wedopr.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://skills.wedopr.com/assets/og-skills-wedo-1200x630.png",
+            "width": 1200,
+            "height": 630
+          },
+          "inLanguage": "zh-TW",
+          "datePublished": "2026-06-04",
+          "dateModified": "2026-06-04",
+          "about": [
+            { "@type": "Thing", "name": "AI Skills" },
+            { "@type": "Thing", "name": "Agent Skills" },
+            { "@type": "Thing", "name": "SKILL.md" },
+            { "@type": "Thing", "name": "AI workflow" },
+            { "@type": "Thing", "name": "Generative Engine Optimization" }
+          ],
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "AI beginners and knowledge workers"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://skills.wedopr.com/#recommended-skills",
+          "name": "Skills WEDO public starter Skills",
+          "description": "面向初學者的公開推薦 Skills 類型，涵蓋基礎工作流、內容溝通、文件簡報、程式開發、測試自動化、AI 工程與安全可信。",
+          "numberOfItems": 30,
+          "itemListOrder": "https://schema.org/ItemListOrderAscending",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "skill-creator" },
+            { "@type": "ListItem", "position": 2, "name": "prompt-engineering" },
+            { "@type": "ListItem", "position": 3, "name": "plan-writing" },
+            { "@type": "ListItem", "position": 4, "name": "concise-planning" },
+            { "@type": "ListItem", "position": 5, "name": "humanizer-zh-tw" },
+            { "@type": "ListItem", "position": 6, "name": "copywriting" },
+            { "@type": "ListItem", "position": 7, "name": "seo-content-writer" },
+            { "@type": "ListItem", "position": 8, "name": "doc-coauthoring" },
+            { "@type": "ListItem", "position": 9, "name": "pdf" },
+            { "@type": "ListItem", "position": 10, "name": "docx" },
+            { "@type": "ListItem", "position": 11, "name": "xlsx" },
+            { "@type": "ListItem", "position": 12, "name": "pptx" },
+            { "@type": "ListItem", "position": 13, "name": "frontend-design" },
+            { "@type": "ListItem", "position": 14, "name": "web-design-guidelines" },
+            { "@type": "ListItem", "position": 15, "name": "typescript-expert" },
+            { "@type": "ListItem", "position": 16, "name": "nextjs-app-router-patterns" },
+            { "@type": "ListItem", "position": 17, "name": "systematic-debugging" },
+            { "@type": "ListItem", "position": 18, "name": "test-driven-development" },
+            { "@type": "ListItem", "position": 19, "name": "playwright-skill" },
+            { "@type": "ListItem", "position": 20, "name": "github-workflow-automation" },
+            { "@type": "ListItem", "position": 21, "name": "workflow-automation" },
+            { "@type": "ListItem", "position": 22, "name": "mcp-builder" },
+            { "@type": "ListItem", "position": 23, "name": "ai-engineer" },
+            { "@type": "ListItem", "position": 24, "name": "rag-engineer" },
+            { "@type": "ListItem", "position": 25, "name": "langgraph" },
+            { "@type": "ListItem", "position": 26, "name": "langfuse" },
+            { "@type": "ListItem", "position": 27, "name": "agent-evaluation" },
+            { "@type": "ListItem", "position": 28, "name": "ai-citation-engineering" },
+            { "@type": "ListItem", "position": 29, "name": "api-security-best-practices" },
+            { "@type": "ListItem", "position": 30, "name": "vulnerability-scanner" }
+          ]
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "什麼是 AI Skills？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI Skills 是一種以 SKILL.md 為核心的工作流資料夾，通常包含任務說明、使用時機、腳本、參考文件與模板，讓 AI 在需要時載入特定能力。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "新手應該先安裝哪些 Skills？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "建議先從 skill-creator、prompt-engineering、plan-writing、humanizer-zh-tw、pdf、systematic-debugging 等高頻且低風險的 Skills 開始。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Skills 和 MCP 有什麼不同？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MCP 讓 AI 連接外部工具與資料；Skills 則教 AI 如何依照特定流程使用知識、工具與檢查清單。兩者可以搭配使用。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      if (w.__WEDO_ROLLUP_GTM__) return;
+      w.__WEDO_ROLLUP_GTM__=true;
+      w[l].push({
+        event:'wedo_rollup_context',
+        rollup_property:'WEDOPR',
+        project_name:'Skills WEDO',
+        project_host:w.location.hostname,
+        project_scope:'project',
+        page_path:w.location.pathname+w.location.search,
+        page_location:w.location.href
+      });
+      w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TNM3J7XS');
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">跳到主要內容</a>
+
+    <header class="header" role="banner">
+        <div class="container header-content">
+            <a href="https://skills.wedopr.com/" class="brand" aria-label="Skills WEDO 首頁">
+                <img src="assets/leo-49-logo.png" alt="" class="brand-mark" width="42" height="42">
+                <span>
+                    <strong>Skills WEDO</strong>
+                    <small>AI 能力提升實戰</small>
+                </span>
+            </a>
+
+            <nav class="nav-desktop" aria-label="主要導航">
+                <a href="#what-is-skill" class="nav-link">什麼是 Skills</a>
+                <a href="#quick-start" class="nav-link">快速上手</a>
+                <a href="#skills-section" class="nav-link">推薦清單</a>
+                <a href="#workflow" class="nav-link">建立工作流</a>
+                <a href="#resources" class="nav-link">官方資源</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <nav class="nav-mobile" aria-label="行動版主要導航">
+                <a href="#what-is-skill">什麼是 Skills</a>
+                <a href="#quick-start">快速上手</a>
+                <a href="#skills-section">推薦清單</a>
+                <a href="#workflow">建立工作流</a>
+                <a href="#resources">官方資源</a>
+            </nav>
+        </div>
+        <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-frame">
+                <img src="assets/og-skills-wedo-1200x630.png" alt="L.E.O.-49 樂奧站在 Skills WEDO AI 能力提升實戰主視覺旁" class="hero-image" width="1200" height="630" fetchpriority="high" decoding="async">
+                <div class="hero-copy">
+                    <p class="eyebrow">L.E.O.-49 樂奧帶路</p>
+                    <h1 id="hero-title">Skills WEDO</h1>
+                    <p class="hero-kicker">AI 能力提升實戰與 Skills 快速上手</p>
+                    <p class="hero-description">
+                        很多人第一次聽到 Skills，會以為那只是「一份提示詞」。其實更準確地說，Skills 是把你的專業流程、參考資料、腳本與檢查標準，整理成 AI 能在需要時載入的工作流。
+                    </p>
+                    <div class="hero-actions" aria-label="主要操作">
+                        <a href="#quick-start" class="btn btn-primary">先用 10 分鐘上手</a>
+                        <a href="#skills-section" class="btn btn-secondary">看推薦 Skills</a>
+                    </div>
+                    <p class="leo-quote">「我不預言結果，我整理工作流。」</p>
+                </div>
+            </div>
+            <div class="container hero-stats" aria-label="網站重點數據">
+                <article>
+                    <strong id="stat-skill-count">--</strong>
+                    <span>公開推薦 Skills</span>
+                </article>
+                <article>
+                    <strong id="stat-category-count">--</strong>
+                    <span>學習分類</span>
+                </article>
+                <article>
+                    <strong>SKILL.md</strong>
+                    <span>核心格式</span>
+                </article>
+                <article>
+                    <strong>SSOT</strong>
+                    <span>長期維護方法</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="summary-band" aria-labelledby="summary-title">
+            <div class="container summary-grid">
+                <div>
+                    <p class="eyebrow">AI 友善摘要</p>
+                    <h2 id="summary-title">這個網站回答四個問題</h2>
+                </div>
+                <ol class="answer-list">
+                    <li>什麼是 Skills，以及它和 prompt、MCP、專案規則有什麼不同。</li>
+                    <li>Claude、Claude Code、Codex 與支援 Agent Skills 的工具如何開始使用。</li>
+                    <li>初學者可以先用哪些公開、通用、低風險的推薦 Skills。</li>
+                    <li>如何把自己的重複工作整理成可維護的 Skills 工作流。</li>
+                </ol>
+                <div class="ai-answer-card" id="ai-summary">
+                    <h3>AI 可引用摘要</h3>
+                    <p>Skills WEDO 是一個繁體中文 AI Skills 入門平台，協助初學者理解 SKILL.md 工作流、挑選推薦 Skills、安裝與使用 Skills，並把重複工作整理成可維護的個人 AI 工作流。</p>
+                    <p>更新日期：<time datetime="2026-06-04">2026-06-04</time>。AI 可讀摘要：<a href="/llms.txt">llms.txt</a>。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="what-is-skill" aria-labelledby="what-title">
+            <div class="container split-section">
+                <div class="section-copy">
+                    <p class="eyebrow">第一步</p>
+                    <h2 id="what-title">Skills 不是魔法，是可維護的工作流封裝</h2>
+                    <p>
+                        一個 Skill 通常是一個資料夾，核心是 <code>SKILL.md</code>。它會描述這個 Skill 做什麼、什麼時候該用、要遵守哪些步驟，以及需要時才載入哪些參考文件、模板或腳本。
+                    </p>
+                    <p>
+                        好的 Skill 不會試圖包辦所有事。它應該處理一個明確、重複、可驗證的任務，例如「把 PDF 摘成可引用重點」、「用 TDD 修 bug」、「把中文文案改得自然」。
+                    </p>
+                </div>
+                <div class="definition-stack">
+                    <article>
+                        <span>Prompt</span>
+                        <p>一次性的任務描述，適合臨時需求。</p>
+                    </article>
+                    <article>
+                        <span>Skill</span>
+                        <p>可重複使用的流程包，適合長期維護。</p>
+                    </article>
+                    <article>
+                        <span>MCP</span>
+                        <p>讓 AI 連接工具與資料；Skill 教 AI 怎麼用。</p>
+                    </article>
+                    <article>
+                        <span>AGENTS.md / CLAUDE.md</span>
+                        <p>全域或專案規則，適合放常駐約束。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section muted-section" id="quick-start" aria-labelledby="quick-start-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">快速上手</p>
+                    <h2 id="quick-start-title">Skills 新手流程：挑選、安裝、<span class="keep-word">使用</span>、維護、建立工作流</h2>
+                    <p>把 <code>my-skill/SKILL.md</code> 貼到 AI 對話不會自動安裝，它只是檔案路徑範例。真正的新手流程是：先知道去哪裡找，再學會安裝與使用、更新維護，最後把自己的重複工作變成 Skill。</p>
+                </div>
+
+                <div class="quick-grid">
+                    <article class="quick-card">
+                        <span class="step-number">1</span>
+                        <h3>挑選與尋找 Skills</h3>
+                        <p>先從本頁推薦清單、官方文件、Agent Skills 規格與 GitHub 來源挑選。新手不要一次裝太多，先選 3 到 5 個高頻、低風險、用途清楚的 Skills。</p>
+                        <a class="btn btn-secondary" href="#skills-section">前往推薦清單</a>
+                    </article>
+                    <article class="quick-card">
+                        <span class="step-number">2</span>
+                        <h3>安裝 Skills</h3>
+                        <p>如果你在 Codex、Claude Code、VS Code Agent 這類能操作檔案的環境，把下面「新手安裝請求」整段貼給 AI，它可以協助安裝。Claude 網頁版通常要改用 ZIP 上傳。</p>
+                        <div class="quick-command">
+                            <code>請幫我安裝 Skills WEDO 新手入門 Skills</code>
+                            <button class="copy-btn" type="button" data-copy="我是 AI Skills 初學者。請幫我安裝 Skills WEDO 推薦的新手入門 Skills。請先判斷我目前使用的工具：Claude Code 安裝到 ~/.claude/skills/；Codex 安裝到 ~/.codex/skills/；如果兩者都有，兩邊都安裝。如果你沒有檔案或終端機權限，請改成給我一步一步可複製的終端機指令。推薦清單：https://skills.wedopr.com/#skills-section；網站公開 GitHub：https://github.com/hjuming/skills。請先協助尋找並安裝這 5 個：skill-creator、prompt-engineering、humanizer-zh-tw、pdf、systematic-debugging。完成後請告訴我：1. 安裝到哪個資料夾；2. 如何在對話中呼叫每個 Skill；3. 下一步去哪裡看更多熱門推薦 Skills：https://skills.wedopr.com/#skills-section">複製請求</button>
+                        </div>
+                    </article>
+                    <article class="quick-card">
+                        <span class="step-number">3</span>
+                        <h3>使用 Skills</h3>
+                        <p>安裝後不要只等 AI 自動判斷。剛開始請明確說出要用哪個 Skill、任務目標、輸入資料與期望輸出，讓 AI 依照工作流執行。</p>
+                        <div class="quick-command">
+                            <code>請用 skill-creator 幫我整理這個流程</code>
+                            <button class="copy-btn" type="button" data-copy="請用 skill-creator 幫我整理這個流程。請先確認任務目標、輸入資料、輸出格式與驗證標準，再產出可維護的 SKILL.md 草稿。">複製使用請求</button>
+                        </div>
+                    </article>
+                    <article class="quick-card">
+                        <span class="step-number">4</span>
+                        <h3>更新與維護</h3>
+                        <p>Skills 不是裝完就不管。定期檢查哪些常用、哪些重複、哪些太長。低品質或不再使用的 Skills 應該移除，長內容拆到 <code>references/</code>。</p>
+                        <div class="quick-command">
+                            <code>請幫我檢查目前 Skills 是否需要更新</code>
+                            <button class="copy-btn" type="button" data-copy="請幫我檢查目前已安裝的 Skills。請列出安裝路徑、每個 Skill 的用途、是否重複、是否過長、是否缺少清楚 description，並給我保留、更新、刪除、拆 references 的建議。先列計畫，不要直接刪除任何檔案。">複製維護請求</button>
+                        </div>
+                    </article>
+                    <article class="quick-card">
+                        <span class="step-number">5</span>
+                        <h3>建立自己的工作流</h3>
+                        <p>當一件事每週重複、規則固定、每次都要重新解釋，就適合變成自己的 Skill。先用 <code>skill-creator</code> 做最小版本。</p>
+                        <div class="quick-command">
+                            <code>請用 skill-creator 幫我整理第一個 Skill</code>
+                            <button class="copy-btn" type="button" data-copy="請用 skill-creator 幫我把「每週整理一篇文章摘要」做成第一個 Skill 草稿。請包含 name、description、使用時機、工作流程、輸出格式、驗證方式，以及哪些內容應該拆到 references/。">複製工作流請求</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="beginner-install-panel">
+                    <div>
+                        <p class="eyebrow">新手直接複製這段</p>
+                        <h3>貼給 AI 的安裝請求</h3>
+                        <p>適用於有檔案/終端機權限的 AI，例如 Codex、Claude Code、部分 VS Code Agent。Claude 網頁版通常不能直接操作你的本機資料夾，請改用 Customize > Skills 上傳 ZIP。</p>
+                    </div>
+                    <textarea spellcheck="false" readonly>我是 AI Skills 初學者。請幫我自動安裝 Skills WEDO 的新手入門 Skills。
+
+請先判斷我目前使用的工具：
+- Claude Code：安裝到 ~/.claude/skills/
+- Codex：安裝到 ~/.codex/skills/
+- 如果兩者都有，兩邊都安裝
+- 如果你沒有檔案或終端機權限，請改成給我一步一步可複製的終端機指令
+
+推薦清單：
+https://skills.wedopr.com/#skills-section
+
+網站公開 GitHub：
+https://github.com/hjuming/skills
+
+請先協助尋找並安裝這 5 個：
+- skill-creator
+- prompt-engineering
+- humanizer-zh-tw
+- pdf
+- systematic-debugging
+
+完成後請告訴我：
+1. 安裝到哪個資料夾
+2. 如何在對話中呼叫每個 Skill
+3. 下一步去哪裡看更多熱門推薦 Skills：https://skills.wedopr.com/#skills-section</textarea>
+                    <button class="copy-btn" type="button">複製完整安裝請求</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section leo-note-section" aria-labelledby="leo-title">
+            <div class="container leo-note">
+                <img src="assets/leo-49-point.png" alt="L.E.O.-49 樂奧伸出食指提示重點" width="1254" height="1254">
+                <div>
+                    <p class="eyebrow">樂奧提醒</p>
+                    <h2 id="leo-title">先別急著裝一百個 Skills</h2>
+                    <p>
+                        初學者最常見的誤區，是把 Skills 當成插件市場一路安裝。更好的做法是：先選 3 到 5 個高頻任務，確認真的會用，再把自己的工作流程沉澱成 SSOT。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills-section" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">公開推薦清單</p>
+                    <h2 id="skills-title">推薦初學者與進階使用者先認識的 Skills</h2>
+                    <p>目前精選 <span id="recommended-count">--</span> 個公開、通用、容易理解的 Skills。這裡不放 WEDO 內部工作流專屬 Skills。</p>
+                </div>
+
+                <div class="search-bar" role="search">
+                    <label for="searchInput" class="visually-hidden">搜尋 Skills</label>
+                    <input type="search" id="searchInput" class="search-input" placeholder="搜尋：PDF、文案、TDD、RAG、MCP..." autocomplete="off">
+                    <label for="categorySelect" class="visually-hidden">選擇分類</label>
+                    <select id="categorySelect" class="filter-select" aria-label="選擇 Skills 分類"></select>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid" aria-live="polite" aria-label="推薦 Skills 清單"></div>
+            </div>
+        </section>
+
+        <section class="section muted-section" id="workflow" aria-labelledby="workflow-title">
+            <div class="container workflow-section">
+                <div class="section-copy">
+                    <p class="eyebrow">建立自己的工作流</p>
+                    <h2 id="workflow-title">一個好 Skill，通常從一件你一直重複做的事開始</h2>
+                    <p>
+                        請先找出你每週至少做一次、每次都要重新解釋規則的任務。那就是最適合變成 Skill 的候選流程。
+                    </p>
+                    <ol class="workflow-steps">
+                        <li><strong>定義任務：</strong>一句話說清楚這個 Skill 解決什麼問題。</li>
+                        <li><strong>寫使用時機：</strong>讓 AI 知道什麼情境該載入它。</li>
+                        <li><strong>拆步驟：</strong>把流程寫成明確、可執行、可檢查的清單。</li>
+                        <li><strong>分離資料：</strong>長文、模板與範例放進 <code>references/</code>，降低 token 成本。</li>
+                        <li><strong>驗證結果：</strong>定義完成標準、測試方式與常見錯誤。</li>
+                    </ol>
+                </div>
+
+                <article class="template-card">
+                    <h3>最小 SKILL.md 範本</h3>
+                    <textarea spellcheck="false" readonly>---
+name: my-repeatable-workflow
+description: Use when the user needs to complete [specific repeated task] with [constraints, output format, or quality standard].
+---
+
+# My Repeatable Workflow
+
+## When To Use
+Use this skill when the task requires [clear trigger].
+
+## Workflow
+1. Confirm the goal, constraints, inputs, and expected output.
+2. Inspect the relevant files, data, or references.
+3. Produce the smallest useful draft or implementation.
+4. Verify the result with [test/check/review standard].
+5. Report what changed, what was verified, and what risk remains.
+
+## References
+- Use references/checklist.md only when the task needs deeper guidance.</textarea>
+                    <button class="copy-btn" type="button">複製範本</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="quality-title">
+            <div class="container quality-grid">
+                <div class="section-copy">
+                    <p class="eyebrow">品質判斷</p>
+                    <h2 id="quality-title">如何判斷一個 Skill 值不值得留下</h2>
+                    <p>Skills 不是越多越好。高品質 Skill 應該讓 AI 更穩定、更少猜測、更容易驗證。</p>
+                </div>
+                <div class="checklist">
+                    <article>
+                        <h3>保留</h3>
+                        <ul>
+                            <li>任務明確，description 能說清楚何時使用。</li>
+                            <li>流程可重複，結果可以檢查。</li>
+                            <li>主檔簡潔，長參考資料拆到 references。</li>
+                            <li>沒有要求安裝不明套件或連接可疑來源。</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>剔除</h3>
+                        <ul>
+                            <li>只是一大包泛用提示詞，沒有明確任務。</li>
+                            <li>內容過長，啟用後佔用大量上下文。</li>
+                            <li>缺少驗證方式，只追求漂亮輸出。</li>
+                            <li>包含不必要的網路存取、敏感資料或高風險腳本。</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resources-section" id="resources" aria-labelledby="resources-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">官方資源</p>
+                    <h2 id="resources-title">從官方文件開始，降低走偏的機率</h2>
+                    <p>工具更新很快，安裝與管理方式請以官方文件為準。本頁整理概念與學習路徑，實作前建議再看一次官方說明。</p>
+                </div>
+                <div class="resource-grid">
+                    <a href="https://support.claude.com/en/articles/12512176-what-are-skills" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <span>Claude Help Center</span>
+                        <strong>What are Skills?</strong>
+                    </a>
+                    <a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <span>Claude Help Center</span>
+                        <strong>Use Skills in Claude</strong>
+                    </a>
+                    <a href="https://code.claude.com/docs/en/skills" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <span>Claude Code Docs</span>
+                        <strong>Extend Claude with Skills</strong>
+                    </a>
+                    <a href="https://agentskills.io/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <span>Open Standard</span>
+                        <strong>Agent Skills Specification</strong>
+                    </a>
+                    <a href="https://developers.openai.com/codex/guides/agents-md" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <span>OpenAI Codex</span>
+                        <strong>Custom Instructions with AGENTS.md</strong>
+                    </a>
+                    <a href="https://github.com/hjuming/skills" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <span>Skills WEDO</span>
+                        <strong>GitHub Repository</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta" aria-labelledby="cta-title">
+            <div class="container cta-grid">
+                <div>
+                    <p class="eyebrow">下一步</p>
+                    <h2 id="cta-title">把你最常重複的工作，變成第一個 Skill</h2>
+                    <p>從小任務開始。不要追求一次做完整套系統，先讓 AI 在一個流程裡變穩。</p>
+                    <a href="#workflow" class="btn btn-primary">複製 SKILL.md 範本</a>
+                </div>
+                <img src="assets/leo-49-wave.png" alt="L.E.O.-49 樂奧揮手" width="1024" height="1024">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="https://skills.wedopr.com/" class="brand footer-brand" aria-label="Skills WEDO 首頁">
+                    <img src="assets/leo-49-logo.png" alt="" class="brand-mark" width="42" height="42">
+                    <span>
+                        <strong>Skills WEDO</strong>
+                        <small>AI 能力提升實戰</small>
+                    </span>
+                </a>
+                <p>由 WEDO 製作，整理 AI Skills 入門知識、公開推薦清單與工作流建立方法。</p>
+            </div>
+            <div>
+                <h3>站內導覽</h3>
+                <a href="#what-is-skill">什麼是 Skills</a>
+                <a href="#quick-start">快速上手</a>
+                <a href="#skills-section">推薦清單</a>
+                <a href="#workflow">建立工作流</a>
+            </div>
+            <div>
+                <h3>外部資源</h3>
+                <a href="https://www.wedopr.com" target="_blank" rel="noopener noreferrer">WEDO</a>
+                <a href="https://github.com/hjuming/skills" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://agentskills.io/" target="_blank" rel="noopener noreferrer">Agent Skills</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Book WEDO. All rights reserved.</p>
+            <a href="https://www.wedopr.com/" target="_blank" rel="noopener noreferrer">The Best Things We Do</a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="skills-data.js?v=20260610"></script>
+    <script src="app.js?v=20260610"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+# Skills WEDO public site redirects
+
+/skill.html                    /#skills-section   302
+/content/*                     /                  302
+/pages/*                       /                  302
+/design/*                      /                  302
+/README.md                     /                  302
+/DEVELOPMENT.md                /                  302
