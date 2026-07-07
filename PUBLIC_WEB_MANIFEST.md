@@ -1,6 +1,6 @@
 # Skills WEDO Public Web Manifest
 
-Last updated: 2026-06-10
+Last updated: 2026-06-20
 
 This repository stays private. Only the static public website export may be published to a public GitHub repository.
 
@@ -62,10 +62,10 @@ Do not publish these paths from the working repository:
 ## Public Export Command
 
 ```bash
-scripts/export-public-web.sh
+scripts/export-public-web.sh --clean
 ```
 
-The default output directory is `_public_web/`, which is ignored by Git in this private working repository.
+The default output directory is `_public_web/`, which is ignored by Git in this private working repository. Use `--clean` to recreate the export before copying files.
 
 ## Verification
 
@@ -74,9 +74,7 @@ After generating the export:
 ```bash
 find _public_web -type f | sort
 
-find _public_web -type f \( -path '*/skills/*' -o -path '*/content/*' -o -path '*/pages/*' -o -path '*/design/*' -o -name '.htaccess' -o -name 'DEVELOPMENT.md' \) -print
-
-rg -n --pcre2 --hidden --glob '!.git/**' -- '-----BEGIN [A-Z ]*PRIVATE KEY-----|ghp_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]+|sk-[A-Za-z0-9]{32,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{35}|xox[baprs]-[0-9A-Za-z-]{20,}|SG\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}|postgres(ql)?://[^\s]+:[^@\s]+@|hooks\.slack\.com/services/[A-Za-z0-9]+/[A-Za-z0-9]+/[A-Za-z0-9]+' _public_web
+scripts/scan-public-export-secrets.sh _public_web
 ```
 
-The first command should list only the allowlisted public files. The second and third commands should return no output.
+The first command should list only the allowlisted public files. The scan command should pass without printing any sensitive values.

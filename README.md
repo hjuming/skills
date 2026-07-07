@@ -37,56 +37,22 @@ Skills WEDO Public Web 是 AI 學習者進入 agent 生態的公開導覽入口�
 
 ### 4) 參與指標（請在申請時補實際數值）
 
-最後更新：`2026-06-10`（自動更新）
+最後更新：`2026-07-07`（自動更新）
 
-- GitHub Stars（本前台倉庫 `hjuming/skills`）：`N/A`
-- 每月網站到訪（或轉換）量：`待接 GA/Cloudflare 接口`
-- 每月 issue / PR：`Issue 開啟 N/A / 關閉 N/A；PR 開啟 N/A / 關閉 N/A`
-- 每季主要更新次數：`28`
+- GitHub Stars（本前台倉庫 `hjuming/skills`）：`0`
+- 每月網站到訪（或轉換）量：`待接 Cloudflare 權杖或 Zone ID`
+- 每月 issue / PR：`Issue 開啟 0 / 關閉 0；PR 開啟 0 / 關閉 0`
+- 每季主要更新次數：`1`
 
 #### 自動更新
 
 - 手動同步：`node scripts/update-public-readme-metrics.mjs`
 - 自動同步：GitHub Actions 每日 04:00 UTC 自動執行 .github/workflows/update-public-readme-metrics.yml
-- GitHub Stars、issue / PR、季度更新次數會由 API 即時抓取更新；網站流量可由 Cloudflare Analytics 或 GA4 Data API 自動補齊。
-
-##### 流量來源可切換（雙軌道）
-
-- `WEBSITE_MONTHLY_VISITS_SOURCE=cloudflare`：使用 Cloudflare Analytics API（預設）
-- `WEBSITE_MONTHLY_VISITS_SOURCE=ga4`：使用 GA4 Data API
-- 不設定時預設為 Cloudflare；也可在 GitHub Actions `workflow_dispatch` 點手動輸入，或用 repo variables 設 `WEBSITE_MONTHLY_VISITS_SOURCE`。
-
-##### Cloudflare Analytics 自動補齊（推薦）
-
-要自動填 `每月網站到訪（或轉換）量`，先完成 2 件事：
-
-1. 在 GitHub Actions 設定 Secrets（本 repo 需有權限）：
-   - `CLOUDFLARE_ZONE_ID`：要查詢的 Zone ID（對應 `skills.wedopr.com` 的 zone）
-   - `CLOUDFLARE_API_TOKEN`：Cloudflare API Token，最低權限建議 `Zone: Read` + `Zone Settings: Read`
-
-2. 檢查工作流程已啟用 Cloudflare 來源（目前預設為 on）：
-   - `.github/workflows/update-public-readme-metrics.yml` 的 `WEBSITE_MONTHLY_VISITS_SOURCE: cloudflare`
-   - `scripts/update-public-readme-metrics.mjs` 會用 `zones/{zoneId}/analytics/dashboard` 查詢月份累計訪客量
-
-##### GA4 Data API 自動補齊
-
-1. 在 GitHub Actions 設定 Secrets：
-   - `GA4_PROPERTY_ID`：GA4 財產 ID（數字字串，例如 `123456789`）
-   - `GA4_ACCESS_TOKEN`：GA4 Data API 的 OAuth Access Token，建議使用 `https://www.googleapis.com/auth/analytics.readonly` scope
-2. 依序啟用 GA4 來源：
-   - `.github/workflows/update-public-readme-metrics.yml` 設定 `WEBSITE_MONTHLY_VISITS_SOURCE: ga4`
-   - 或在手動執行時帶入：`WEBSITE_MONTHLY_VISITS_SOURCE=ga4`
-3. 如需追蹤不同口徑（例如瀏覽量），可補上：
-   - `GA4_METRIC_NAME=screenPageViews`（預設是 `sessions`）
-
-> GA4 建議建立可自動輪替 token 的方式，避免手動維護短效 token。
-
-如果你先不想接任一 API，先手動維持值也可以：
-
-- `WEBSITE_MONTHLY_VISITS`：在 workflow env（或本地執行）直接寫入目前月份數值。
-- 範例手動：`WEBSITE_MONTHLY_VISITS=1234 node scripts/update-public-readme-metrics.mjs web/PUBLIC_README.md`
-
-GA4 來源可直接改 `WEBSITE_MONTHLY_VISITS_SOURCE=ga4` 使用，同步時需補齊 GA4 的 Access Token 與 Property ID（見下方區段）。
+- GitHub Stars、issue / PR、季度更新次數會由 API 即時抓取更新；網站流量維持手動更新，或設定 `WEBSITE_MONTHLY_VISITS` 後改為自動化。
+- GitHub Stars、issue / PR、季度更新次數會由 API 即時抓取更新；網站流量可選：
+  - `WEBSITE_MONTHLY_VISITS_SOURCE=cloudflare`（Cloudflare Analytics）
+  - `WEBSITE_MONTHLY_VISITS_SOURCE=ga4`（GA4 Data API）
+- 也可改用 `WEBSITE_MONTHLY_VISITS` 直接人工覆寫單月數值。
 
 > 申請文件可直接抄到這段，最後更新前只改上方 ___
 
