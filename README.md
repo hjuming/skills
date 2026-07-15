@@ -1,41 +1,50 @@
-# Skills WEDO Public Web
+# Skills WEDO
 
-AI 能力提升實戰與 Skills 快速上手。  
-This repository contains the public static frontend for [skills.wedopr.com](https://skills.wedopr.com).
+AI 能力提升實戰與 Skills 快速上手 — 繁體中文的 AI Skills 入門平台。
 
-![Skills WEDO Hero](assets/og-skills-wedo-1200x630.png)
+![Skills WEDO — AI 能力提升實戰](assets/og-skills-wedo-1200x630.png)
 
-## 專案定位
+> 線上網站：<https://skills.wedopr.com>
+> 推薦 Skills：<https://skills.wedopr.com/#skills-section>
 
-Skills WEDO Public Web 是 AI 學習者進入 agent 生態的公開導覽入口。  
-目標是降低「會不會用 Skills」與「不知道安裝」之間的落差，提供可直接複製、可直接實作的導入流程。
+## 這是什麼
 
-- 讓初學者理解什麼是 Skill、Prompt、MCP、AGENTS/CLAUDE.md 的差異
-- 幫助快速找到可重複使用的推薦 Skills
-- 提供可複製安裝/初始化指令與工作流提示
-- 支援後續維護與個人化工作流建立
+很多人第一次聽到 Skills，會以為那只是「一份提示詞」。其實 Skills 是把你的專業流程、參考資料、腳本與檢查標準，整理成 AI 能在需要時自動載入的工作流。
 
-網站上線網址：<https://skills.wedopr.com>
+Skills WEDO 的目標，是幫 AI 初學者跨過「知道 Skills 有用」到「真的會挑、會裝、會用」之間那道門檻。首頁用五個步驟帶你走完整條路：
 
-## 為什麼這個專案需要 Codex for Open Source 支持
+1. 認識 Skills，以及它和 prompt、MCP、`AGENTS.md` / `CLAUDE.md` 專案規則的差異。
+2. 到哪裡挑選、尋找初學者友善的推薦 Skills。
+3. 如何把 Skills 安裝到 Claude Code、Codex、VS Code Agent 等工具。
+4. 安裝後如何明確調用、使用與維護。
+5. 如何把重複的工作變成自己的 `SKILL.md`。
 
-### 1) 專案對整體生態系有實際價值
-- Skills 這類基礎工具的導入門檻高，卻影響大量 AI coding workflow 的實際品質與效率。  
-- 本站不只展示內容，而是承接「能否開始使用」的落地問題：選擇、安裝、操作、維護、持續迭代。
-- 透過前端導覽，將 AI 初學者的第一步路徑標準化，對 AI 工具普及有放大效應。
+## 精選 Skills（可直接取用）
 
-### 2) 維護工作已形成持續且可擴展的負擔
-- 定期更新首頁結構、SEO/分享 metadata、快取策略與安全邊界
-- 持續同步推薦清單，確保技能建議保持一致與可理解
-- 回應社群提問、整理 issue、審查內容修改、管理外部連結與行為導向
-- 管理發布流程（快取版本對齊、export 流程、導向規則維持）
+本倉庫的 [`skills/`](skills/) 收錄 **29 個精選、通用、初學者友善的 Skills**，由 WEDO 的私有 SSOT 匯出。完整清單見 [`skills/README.md`](skills/README.md)，涵蓋文件（`pdf`、`docx`、`xlsx`、`pptx`）、內容（`humanizer-zh-tw`、`copywriting`、`seo-content-writer`）、開發（`typescript-expert`、`nextjs-app-router-patterns`）、除錯與測試（`systematic-debugging`、`test-driven-development`）、AI 工程（`mcp-builder`、`rag-engineer`、`langgraph`）與基礎工作流（`skill-creator`、`prompt-engineering`、`plan-writing`）等。
 
-### 3) 安全與品質風險高，需更強化的維護工具
-- 網站對外可見，任何不當連結、快取策略、腳本變更都可能直接影響使用者信任。
-- 我們維持「不外露憑證、不外流機密」原則，但仍需持續稽核可能回流的敏感字串與路徑。
-- `Codex Security` 可在維護流程中降低漏檢風險，縮短審核時間，維持高品質更新節奏。
+安裝一個 Skill，就是把資料夾複製到你的工具目錄：
 
-### 4) 參與指標（請在申請時補實際數值）
+```bash
+# Claude Code
+cp -R skills/skill-creator ~/.claude/skills/
+# Codex
+cp -R skills/skill-creator ~/.codex/skills/
+```
+
+裝好後在對話直接用自然語言觸發，例如：「請用 `pdf` 幫我整理這份 PDF 的重點」「請用 `systematic-debugging` 追這個測試失敗的根因」。不需要斜線指令，講到名字或用途就會載入。
+
+## 本地預覽
+
+```bash
+python3 -m http.server 4190 --bind 127.0.0.1
+```
+
+再開啟 <http://127.0.0.1:4190/>。
+
+## 專案數據（每日自動更新）
+
+### 專案參與指標
 
 最後更新：`2026-07-11`（自動更新）
 
@@ -49,63 +58,25 @@ Skills WEDO Public Web 是 AI 學習者進入 agent 生態的公開導覽入口�
 - 手動同步：`node scripts/update-public-readme-metrics.mjs`
 - 自動同步：GitHub Actions 每日 04:00 UTC 自動執行 .github/workflows/update-public-readme-metrics.yml
 - GitHub Stars、issue / PR、季度更新次數會由 API 即時抓取更新；網站流量維持手動更新，或設定 `WEBSITE_MONTHLY_VISITS` 後改為自動化。
-- GitHub Stars、issue / PR、季度更新次數會由 API 即時抓取更新；網站流量可選：
-  - `WEBSITE_MONTHLY_VISITS_SOURCE=cloudflare`（Cloudflare Analytics）
-  - `WEBSITE_MONTHLY_VISITS_SOURCE=ga4`（GA4 Data API）
-- 也可改用 `WEBSITE_MONTHLY_VISITS` 直接人工覆寫單月數值。
-
-> 申請文件可直接抄到這段，最後更新前只改上方 ___
+- 網站流量可選 `WEBSITE_MONTHLY_VISITS_SOURCE=cloudflare`（Cloudflare Analytics）或 `WEBSITE_MONTHLY_VISITS_SOURCE=ga4`（GA4 Data API），也可用 `WEBSITE_MONTHLY_VISITS` 人工覆寫。
 
 ## 專案架構（公開檔案）
 
-本倉庫只包含對外發布的前台靜態資源：
+本倉庫是 [skills.wedopr.com](https://skills.wedopr.com) 的公開前台，包含靜態網站與精選 Skills：
 
-- `index.html`
-- `styles.css`
-- `app.js`
-- `skills-data.js`
-- `sw.js`
-- `llms.txt`
-- `robots.txt`
-- `sitemap.xml`
-- `_redirects`
-- `_headers`
-- `assets/*`
-- `favicon_io/*`
+- 網站：`index.html`、`styles.css`、`app.js`、`skills-data.js`、`sw.js`、`llms.txt`、`robots.txt`、`sitemap.xml`、`_redirects`、`_headers`
+- 資產：`assets/*`、`favicon_io/*`
+- 精選 Skills：`skills/<name>/`（由私有 SSOT 匯出，請勿手動編輯）
 
-內部 WEDO workflow Skills、歷史 skill archive、內部設定文件、完整 `skills/` 內容都不會包含在這個 public export。
-
-## 本地預覽
-
-```bash
-python3 -m http.server 4190 --bind 127.0.0.1
-```
-
-再開啟：
-
-```text
-http://127.0.0.1:4190/
-```
+WEDO 內部 workflow Skills、歷史 skill archive、內部設定文件與完整 skills 目錄不在此公開匯出範圍內。
 
 ## 維護規則（對外）
 
-- 只納入面向公開訪客與 GitHub 閱讀者的內容。
-- 不放入 API key、環境變數、客戶專案機密流程、私人本機路徑。
-- 所有對外資料變更都需確認不外洩 WEDO 內部工作流與敏感路徑。
-- 任何新增推薦 Skill，需具備：
-  - 明確用途
-  - 可複製範例 prompt
-  - 可公開查閱的連結來源
+- 只納入面向公開訪客的內容；不放入 API key、環境變數、客戶機密流程或私人本機路徑。
+- `skills/` 由私有倉庫的匯出流程產生，不在此手改；要調整請回到私有 SSOT。
+- 任何新增推薦 Skill，需具備明確用途、可複製範例 prompt，以及可公開查閱的來源。
 
-## 最新更新（2026-06-10）
+## 授權與引用
 
-- 首頁導向調整為五步學習流程（定位、發現、安裝、使用、維護）。
-- 新增 `agent-process-guard` 至公開推薦流程。
-- 版本與快取同步：
-  - `index.html` 使用 `styles.css?v=20260610-five-modules`
-  - `sw.js` `skills-cache-v4.2`、`skills-runtime-v4.2`
-- 安全邊界維持不變：不公開內部 workflow、金鑰、私有 repository path。
-
-
-
-
+- 精選 Skills 多為社群或官方收錄，各自授權見 `skills/<name>/LICENSE`。
+- 引用本站：Skills WEDO.「AI 能力提升實戰與 Skills 快速上手.」WEDO. <https://skills.wedopr.com/>
