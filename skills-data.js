@@ -53,23 +53,6 @@ const skillsData = [
         featured: true
     },
     {
-        id: "concise-planning",
-        name: "concise-planning",
-        icon: "02",
-        category: "basics",
-        categoryName: "基礎工作流",
-        level: "入門必學",
-        persona: "想要短計畫與快節奏的人",
-        description: "用較短的方式規劃 coding 或內容任務，適合不需要大型 PRD、但需要清楚下一步的情境。",
-        examples: [
-            "請用 concise-planning 幫我用 5 個步驟規劃這次改版。",
-            "請把這個任務拆成今天可以完成的最小版本。"
-        ],
-        recommendationReason: "不是每件事都需要厚重文件；短而準的計畫，能讓 AI 更快進入交付。",
-        link: "https://github.com/hjuming/skills",
-        featured: true
-    },
-    {
         id: "humanizer-zh-tw",
         name: "humanizer-zh-tw",
         icon: "文",
@@ -296,23 +279,6 @@ const skillsData = [
         ],
         recommendationReason: "把品質習慣變成 AI 的預設工作方式，是 Skills 最實用的用法之一。",
         link: "https://github.com/hjuming/skills"
-    },
-    {
-        id: "playwright-skill",
-        name: "playwright-skill",
-        icon: "E2E",
-        category: "automation",
-        categoryName: "測試與自動化",
-        level: "進階入門",
-        persona: "需要瀏覽器測試的人",
-        description: "使用 Playwright 進行瀏覽器自動化、互動測試、截圖檢查與前端驗證。",
-        examples: [
-            "請用 playwright-skill 幫我測試這個登入流程。",
-            "請用 Playwright 截圖檢查桌機與手機版是否有重疊問題。"
-        ],
-        recommendationReason: "把 AI 的建議連到真實畫面驗證，比只看程式碼可靠很多。",
-        link: "https://github.com/hjuming/skills",
-        featured: true
     },
     {
         id: "github-workflow-automation",
