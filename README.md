@@ -46,9 +46,9 @@ python3 -m http.server 4190 --bind 127.0.0.1
 
 ### 專案參與指標
 
-最後更新：`2026-07-11`（自動更新）
+最後更新：`2026-07-18`（自動更新）
 
-- GitHub Stars（本前台倉庫 `hjuming/skills`）：`0`
+- GitHub Stars（本前台倉庫 `hjuming/skills`）：`1`
 - 每月網站到訪（或轉換）量：`待接 Cloudflare 權杖或 Zone ID`
 - 每月 issue / PR：`Issue 開啟 0 / 關閉 0；PR 開啟 0 / 關閉 0`
 - 每季主要更新次數：`1`
