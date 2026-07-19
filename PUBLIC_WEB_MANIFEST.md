@@ -90,6 +90,7 @@ allow-tree skills
 deny-tree web/content
 deny-tree web/pages
 deny-tree web/design
+deny-tree handoffs
 deny-file web/.htaccess
 deny-file web/DEVELOPMENT.md
 deny-file web/README.md
@@ -108,6 +109,7 @@ Do not publish these paths from the working repository:
 - `web/content/`
 - `web/pages/`
 - `web/design/`
+- `handoffs/`
 - `web/.htaccess`
 - `web/DEVELOPMENT.md`
 - `web/README.md`
