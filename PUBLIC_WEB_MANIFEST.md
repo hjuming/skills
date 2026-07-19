@@ -55,6 +55,50 @@ Public assets:
 - `favicon_io/android-chrome-512x512.png`
 - `favicon_io/site.webmanifest`
 
+## Machine-readable Export Contract
+
+The release gate reads the block below. Keep each public file explicit; only
+`skills/` is an allowed tree because each selected skill may contain its own
+references, scripts, and assets.
+
+```export-contract
+allow-file index.html
+allow-file styles.css
+allow-file app.js
+allow-file skills-data.js
+allow-file sw.js
+allow-file llms.txt
+allow-file robots.txt
+allow-file sitemap.xml
+allow-file _redirects
+allow-file _headers
+allow-file README.md
+allow-file PUBLIC_WEB_MANIFEST.md
+allow-file assets/og-skills-wedo-1200x630.png
+allow-file assets/leo-49-logo.png
+allow-file assets/leo-49-point.png
+allow-file assets/leo-49-wave.png
+allow-file assets/leo-49-hero.png
+allow-file favicon_io/favicon.ico
+allow-file favicon_io/favicon-32x32.png
+allow-file favicon_io/favicon-16x16.png
+allow-file favicon_io/apple-touch-icon.png
+allow-file favicon_io/android-chrome-192x192.png
+allow-file favicon_io/android-chrome-512x512.png
+allow-file favicon_io/site.webmanifest
+allow-tree skills
+deny-tree web/content
+deny-tree web/pages
+deny-tree web/design
+deny-file web/.htaccess
+deny-file web/DEVELOPMENT.md
+deny-file web/README.md
+deny-tree .git
+```
+
+Every public `id` in `skills-data.js` must materialize as
+`skills/<id>/SKILL.md`; missing selected skills fail the release.
+
 ## Explicitly Excluded
 
 Do not publish these paths from the working repository:
@@ -83,7 +127,5 @@ For maintainers, the export workflow: (1) builds the website + selected skills i
 `export-public.sh` runs the gate automatically. To check manually:
 
 ```bash
-scripts/verify-public-skills.sh          # policy: only selected, no wedo-*/payment
-scripts/scan-public-export-secrets.sh _public_web   # no secrets
-find _public_web -type f | sort          # allowlisted files + selected skills only
+scripts/verify-public-export-contract.sh _public_web   # complete manifest contract, skill policy, and secrets
 ```
