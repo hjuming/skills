@@ -1,0 +1,18 @@
+{
+  "skill_name": "agent-evaluation",
+  "note": "LLM agent reliability, behavioral evaluation, and benchmark design calibration.",
+  "evals": [
+    { "query": "客服 AI 每次回答都不太一樣，幫我設計重跑 30 次也能看穩定度的評估", "should_trigger": true, "expected_skill": "agent-evaluation" },
+    { "query": "我們的 RAG agent 在 demo 分數高但客戶實測很差，要怎麼建立 production eval", "should_trigger": true, "expected_skill": "agent-evaluation" },
+    { "query": "請為 tool-using agent 定義 behavioral contracts 和 regression suite", "should_trigger": true, "expected_skill": "agent-evaluation" },
+    { "query": "想 benchmark 兩個模型做理賠摘要，需避免 test set leakage", "should_trigger": true, "expected_skill": "agent-evaluation" },
+    { "query": "幫我設計 adversarial cases 測試 AI agent 是否會被 prompt injection 帶偏", "should_trigger": true, "expected_skill": "agent-evaluation" },
+    { "query": "我要在 production 加 RAG trace、token cost 與 latency dashboard", "should_trigger": false, "expected_skill": "observability-engineer" },
+    { "query": "請做一個企業知識庫問答 chatbot，資料放 pgvector", "should_trigger": false, "expected_skill": "ai-engineer" },
+    { "query": "這次 migration 會刪掉 200 萬筆舊紀錄，先幫我設人工確認關卡", "should_trigger": false, "expected_skill": "agent-process-guard" },
+    { "query": "幫我修 React 測試一直 flaky 的問題", "should_trigger": false, "expected_skill": "test-fixing" },
+    { "query": "用 A/B test 比較首頁兩個 CTA 哪個轉換率高", "should_trigger": false, "expected_skill": "ab-test-setup" },
+    { "query": "請幫我做一個客服 agent，串 CRM 並上線", "should_trigger": false, "expected_skill": "ai-engineer" },
+    { "query": "替會使用工具的 AI 助理規劃離線評測，重複執行多輪比較成功率與波動。", "should_trigger": true, "expected_skill": "agent-evaluation" }
+  ]
+}

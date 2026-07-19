@@ -1,0 +1,17 @@
+{
+  "skill_name": "ai-engineer",
+  "note": "Production LLM, RAG, agents, retrieval, safety, cost, and observability architecture.",
+  "evals": [
+    { "query": "幫我設計企業內部文件問答系統：pgvector hybrid retrieval、rerank、權限過濾", "should_trigger": true, "expected_skill": "ai-engineer" },
+    { "query": "客服 copilot 要串 tool calling，請規劃 escalation、prompt injection 防護與成本上限", "should_trigger": true, "expected_skill": "ai-engineer" },
+    { "query": "我們想比較 GPT 與 Claude 做多模態發票辨識，設計可上線的架構與 fallback", "should_trigger": true, "expected_skill": "ai-engineer" },
+    { "query": "Build a streaming LLM API with semantic cache, rate limits, tracing, and staged rollout", "should_trigger": true, "expected_skill": "ai-engineer" },
+    { "query": "知識庫 query 常找不到正確段落，想調 chunking、embedding 和 reranker", "should_trigger": true, "expected_skill": "ai-engineer" },
+    { "query": "幫我建立 agent benchmark 與 repeated-run reliability metrics", "should_trigger": false, "expected_skill": "agent-evaluation" },
+    { "query": "我要做普通的商品搜尋 API，不需要模型或 embeddings", "should_trigger": false, "expected_skill": "algolia-search" },
+    { "query": "替 REST endpoint 補 JWT 驗證、CORS 和 input schema", "should_trigger": false, "expected_skill": "api-security-best-practices" },
+    { "query": "請把聊天頁 UI 改成手機友善的 React 元件", "should_trigger": false, "expected_skill": "frontend-design" },
+    { "query": "用 scikit-learn 預測下個月銷售額，不用語言模型", "should_trigger": false, "expected_skill": null },
+    { "query": "替模型代理建立離線評測集，連跑多輪比較工具完成率與結果波動。", "should_trigger": false, "expected_skill": "agent-evaluation" }
+  ]
+}

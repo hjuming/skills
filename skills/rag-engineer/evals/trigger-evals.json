@@ -1,0 +1,20 @@
+{
+  "skill_name": "rag-engineer",
+  "note": "觸發校準：RAG 文件處理、embedding、vector/hybrid retrieval、metadata、reranking 與 retrieval quality 評估；非泛用 SQL、prompt wording 或 agent orchestration。",
+  "evals": [
+    { "query": "知識庫回答常抓到不相關段落，請重新設計切段、metadata filter 和 reranker", "should_trigger": true, "expected_skill": "rag-engineer" },
+    { "query": "我要把產品手冊與 FAQ 做成語意搜尋，關鍵字和向量結果要一起排序", "should_trigger": true, "expected_skill": "rag-engineer" },
+    { "query": "不同類型文件共用 embedding 效果很差，怎麼建立檢索評估集並選模型？", "should_trigger": true, "expected_skill": "rag-engineer" },
+    { "query": "請規劃 parent-child index，先找章節再取精確段落，避免整本文件塞進 context", "should_trigger": true, "expected_skill": "rag-engineer" },
+    { "query": "來源文件更新後常回答舊內容，想要一條增量重新嵌入與版本追蹤流程", "should_trigger": true, "expected_skill": "rag-engineer" },
+    { "query": "How can I measure retrieval recall separately from answer quality for a document assistant?", "should_trigger": true, "expected_skill": "rag-engineer" },
+    { "query": "這段 system instruction 太模糊，幫我加 few-shot examples 讓分類輸出固定", "should_trigger": false, "expected_skill": "prompt-engineering" },
+    { "query": "我要看客服模型每輪工具呼叫的 trace、成本和 user score", "should_trigger": false, "expected_skill": "langfuse" },
+    { "query": "請做有 checkpointer 與人工審批節點的 research agent state graph", "should_trigger": false, "expected_skill": "langgraph" },
+    { "query": "我要在 PostgreSQL 寫一個報表查詢，聚合訂單與退款金額", "should_trigger": false, "expected_skill": "sql-pro" },
+    { "query": "幫我把 Algolia 的 typo tolerance 和 facet 設定調好", "should_trigger": false, "expected_skill": "algolia-search" },
+    { "query": "把這句英文翻成繁中", "should_trigger": false, "expected_skill": null },
+    { "query": "產品 FAQ 文案很生硬，幫我潤一下", "should_trigger": false, "expected_skill": "humanizer-zh-tw" },
+    { "query": "請把分類模型的指令加入三組示例，並強制輸出固定 schema。", "should_trigger": false, "expected_skill": "prompt-engineering" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "skill_name": "prompt-engineering",
+  "note": "觸發校準：改善模型指令、system prompt、few-shot、輸出結構、edge cases 與 prompt 實驗；非 trace 平台、agent graph 或檢索基礎設施。",
+  "evals": [
+    { "query": "這個抽取指令有時回 Markdown、有時回 JSON，請重設 system prompt 和範例讓格式穩定", "should_trigger": true, "expected_skill": "prompt-engineering" },
+    { "query": "我要讓模型正確處理退款例外，幫我設計 few-shot inputs/outputs 和評估案例", "should_trigger": true, "expected_skill": "prompt-engineering" },
+    { "query": "摘要功能常漏掉數字，請比較兩版指令並提出可以量測的改寫假設", "should_trigger": true, "expected_skill": "prompt-engineering" },
+    { "query": "客服模型遇到資料不足時會編造，prompt 要怎麼要求它說不知道並給 confidence？", "should_trigger": true, "expected_skill": "prompt-engineering" },
+    { "query": "幫我把散落的角色設定、格式規則、變數模板整理成可維護的 instruction hierarchy", "should_trigger": true, "expected_skill": "prompt-engineering" },
+    { "query": "How should I test a revised system instruction against edge cases without making the context window huge?", "should_trigger": true, "expected_skill": "prompt-engineering" },
+    { "query": "我要把每次模型呼叫的 prompt version、token、分數與 trace 放進可查的 dashboard", "should_trigger": false, "expected_skill": "langfuse" },
+    { "query": "請設計可暫停、可恢復、會依狀態分支的多步 agent 流程", "should_trigger": false, "expected_skill": "langgraph" },
+    { "query": "我們的回答引用錯文件，請改善 chunking、metadata filter 與 reranking", "should_trigger": false, "expected_skill": "rag-engineer" },
+    { "query": "把這篇繁中公告改得更有人味，移除很像 AI 的空話", "should_trigger": false, "expected_skill": "humanizer-zh-tw" },
+    { "query": "請替模型 API 加上 retry、queue 和 rate limit", "should_trigger": false, "expected_skill": "ai-engineer" },
+    { "query": "解釋 temperature 參數是什麼", "should_trigger": false, "expected_skill": null }
+  ]
+}

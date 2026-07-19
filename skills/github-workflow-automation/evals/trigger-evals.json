@@ -1,0 +1,16 @@
+{
+  "skill_name": "github-workflow-automation",
+  "note": "GitHub Actions, PR/issue automation, CI/CD glue, and safe repository workflow design.",
+  "evals": [
+    { "query": "幫我寫 GitHub Actions：PR 開啟時跑 lint/typecheck，失敗就擋 merge", "should_trigger": true, "expected_skill": "github-workflow-automation" },
+    { "query": "想在 issue opened 自動分類 bug/feature、保守加 labels 並提醒缺少 reproduction", "should_trigger": true, "expected_skill": "github-workflow-automation" },
+    { "query": "設計 release workflow：manual dispatch、最小 permissions、deploy 後 health check 和 rollback", "should_trigger": true, "expected_skill": "github-workflow-automation" },
+    { "query": "請做 PR AI review automation，但 fork PR 不能接觸 secrets 也不能重複留言", "should_trigger": true, "expected_skill": "github-workflow-automation" },
+    { "query": "We need scheduled stale-branch cleanup and an auto-rebase workflow with safe failure behavior", "should_trigger": true, "expected_skill": "github-workflow-automation" },
+    { "query": "我要直接 git reset --hard 後 force push main", "should_trigger": false, "expected_skill": "agent-process-guard" },
+    { "query": "請改善我們 API webhook 的 signature 驗證與 authorization", "should_trigger": false, "expected_skill": "api-security-best-practices" },
+    { "query": "Vercel 部署一直失敗，幫我診斷 runtime build error", "should_trigger": false, "expected_skill": "deployment-procedures" },
+    { "query": "幫我設計 agent 是否可靠的 benchmark 和 regression metrics", "should_trigger": false, "expected_skill": "agent-evaluation" },
+    { "query": "為一個 Node script 寫本機 unit tests，不需要 CI", "should_trigger": false, "expected_skill": "test-driven-development" }
+  ]
+}

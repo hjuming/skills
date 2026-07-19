@@ -1,0 +1,20 @@
+{
+  "skill_name": "typescript-expert",
+  "note": "TypeScript/JavaScript 型別、tsconfig、module resolution、migration 與 monorepo 問題的觸發校準；反例分流至通用 debugging、Next.js、React 效能、安全、Python 與 CI。",
+  "evals": [
+    { "query": "這個 conditional type 一直出現 Type instantiation is excessively deep，請幫我簡化又保留型別安全", "should_trigger": true, "expected_skill": "typescript-expert" },
+    { "query": "Migrate this JavaScript package incrementally to strict TypeScript without breaking its public API or declaration output.", "should_trigger": true, "expected_skill": "typescript-expert" },
+    { "query": "pnpm monorepo 裡的 paths 在 tsc 正常、Node runtime 卻找不到 module，請核對 tsconfig 與 ESM 解析", "should_trigger": true, "expected_skill": "typescript-expert" },
+    { "query": "請用 discriminated union 重構這個 API result，讓 switch 可以 exhaustive check 且不用 any", "should_trigger": true, "expected_skill": "typescript-expert" },
+    { "query": "Our typecheck takes four minutes. Diagnose compiler hotspots and tune project references, include/exclude, and incremental settings.", "should_trigger": true, "expected_skill": "typescript-expert" },
+    { "query": "這個第三方套件沒有 declaration file，請寫安全的 ambient module 並驗證 CJS/ESM interop", "should_trigger": true, "expected_skill": "typescript-expert" },
+    { "query": "這個後台上線後偶爾丟單，語言不是重點，先幫我追整條資料流找根因", "should_trigger": false, "expected_skill": "systematic-debugging" },
+    { "query": "用 Next.js App Router 建一個有 parallel routes 與 server actions 的後台架構", "should_trigger": false, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "這個 React 頁面 hydration 後一直重 render，請做 bundle 與 component performance 優化", "should_trigger": false, "expected_skill": "vercel-react-best-practices" },
+    { "query": "幫我檢查前端這段 dangerouslySetInnerHTML 會不會 XSS，並改成安全輸出", "should_trigger": false, "expected_skill": "frontend-security-coder" },
+    { "query": "用 Python 3.12 寫一個 async FastAPI client，要有 typing、retry 和 pytest", "should_trigger": false, "expected_skill": "python-pro" },
+    { "query": "幫我做 GitHub Actions matrix，對 Node 20/22 跑 lint、test 和 build", "should_trigger": false, "expected_skill": "github-actions-templates" },
+    { "query": "這段 README 的 module 章節請翻譯", "should_trigger": false, "expected_skill": null },
+    { "query": "在 Next.js 15 的 app 目錄加入攔截式路由與伺服器動作。", "should_trigger": false, "expected_skill": "nextjs-app-router-patterns" }
+  ]
+}

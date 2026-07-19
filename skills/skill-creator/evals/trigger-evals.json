@@ -1,0 +1,19 @@
+{
+  "skill_name": "skill-creator",
+  "note": "Skill package 創建與改造的觸發校準；反例分流至 plugin、MCP、prompt、agent eval 與文件共作。",
+  "evals": [
+    { "query": "我有一套內部客訴處理 SOP，想整理成可安裝、有 SKILL.md 與 references 的能力包", "should_trigger": true, "expected_skill": "skill-creator" },
+    { "query": "Create a reusable capability package for reviewing Terraform plans, including concise frontmatter triggers and bundled validation scripts.", "should_trigger": true, "expected_skill": "skill-creator" },
+    { "query": "這個既有能力包很難觸發，幫我重寫 description，並把過長本體拆到 references", "should_trigger": true, "expected_skill": "skill-creator" },
+    { "query": "幫我設計一個專門處理備份還原的 AI 能力目錄，要有 scripts、assets 和清楚的使用邊界", "should_trigger": true, "expected_skill": "skill-creator" },
+    { "query": "Turn this repeated research workflow into a compact installable skill, with progressive disclosure and no extra README files.", "should_trigger": true, "expected_skill": "skill-creator" },
+    { "query": "請檢查我這個 SKILL.md 的 frontmatter、觸發語意和資源分層，並修到可封裝發佈", "should_trigger": true, "expected_skill": "skill-creator" },
+    { "query": "我要做一個同時包含 OAuth app、MCP server 和安裝 manifest 的 Codex plugin，請幫我 scaffold", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我用 Python 寫一個 MCP server，對外提供查詢客戶資料的 tools 和 resources", "should_trigger": false, "expected_skill": "mcp-builder" },
+    { "query": "我的 system prompt 輸出很不穩，請用 few-shot 與結構化輸出幫我重設", "should_trigger": false, "expected_skill": "prompt-engineering" },
+    { "query": "我要比較兩個 coding agent 在 50 題 benchmark 的正確率、成本與延遲", "should_trigger": false, "expected_skill": "agent-evaluation" },
+    { "query": "幫我跟一起把這份技術提案從大綱、草稿修到定稿", "should_trigger": false, "expected_skill": "doc-coauthoring" },
+    { "query": "規劃一個 n8n 流程，收到 webhook 後分支處理、失敗重試並寫回 CRM", "should_trigger": false, "expected_skill": "workflow-automation" },
+    { "query": "把每月資安檢核流程包成可重複安裝的 AI 工作套件，包含入口說明、參考資料和驗證腳本。", "should_trigger": true, "expected_skill": "skill-creator" }
+  ]
+}

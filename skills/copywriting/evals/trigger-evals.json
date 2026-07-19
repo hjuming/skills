@@ -1,0 +1,18 @@
+{
+  "skill_name": "copywriting",
+  "note": "Conversion-focused page copy, messaging hierarchy, headlines, and CTAs.",
+  "evals": [
+    { "query": "我們 SaaS 首頁太像功能清單，請重寫 hero、benefit sections 和 demo CTA", "should_trigger": true, "expected_skill": "copywriting" },
+    { "query": "為新手爸媽的寵物保險 landing page 寫一組清楚但不誇大的標題與按鈕", "should_trigger": true, "expected_skill": "copywriting" },
+    { "query": "pricing page 的方案描述很難懂，請改成讓使用者知道該選哪一方案的文案", "should_trigger": true, "expected_skill": "copywriting" },
+    { "query": "Rewrite this feature page from technical jargon into customer outcomes, with 3 CTA options", "should_trigger": true, "expected_skill": "copywriting" },
+    { "query": "幫 B2B 顧問服務寫 about page 的品牌故事、proof points 和預約 CTA", "should_trigger": true, "expected_skill": "copywriting" },
+    { "query": "替 onboarding email sequence 寫三封自動信", "should_trigger": false, "expected_skill": null },
+    { "query": "把現有首頁逐句潤飾，保留結構只抓語病和贅字", "should_trigger": false, "expected_skill": null },
+    { "query": "我要設計付費牆 popup 的折扣文案與退出挽留流程", "should_trigger": false, "expected_skill": null },
+    { "query": "把這份中文合約翻成英文，不要改意思", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我做一張產品發布 IG 視覺圖", "should_trigger": false, "expected_skill": null },
+    { "query": "首頁登入後白屏，請找 root cause", "should_trigger": false, "expected_skill": "systematic-debugging" },
+    { "query": "把這段繁中產品公告改得更自然，意思與段落都不要動，只去掉官腔。", "should_trigger": false, "expected_skill": "humanizer-zh-tw" }
+  ]
+}

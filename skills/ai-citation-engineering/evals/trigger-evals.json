@@ -1,0 +1,16 @@
+{
+  "skill_name": "ai-citation-engineering",
+  "note": "Answer-layer trust, quotable content, and machine-readable citations; not generic SEO.",
+  "evals": [
+    { "query": "想讓 ChatGPT search 比較容易引用我們的醫療衛教頁，怎麼補可信來源與更新資訊", "should_trigger": true, "expected_skill": "ai-citation-engineering" },
+    { "query": "請替這篇文章設計 answer-first block、FAQ 和 JSON-LD，目標是 AI Overview", "should_trigger": true, "expected_skill": "ai-citation-engineering" },
+    { "query": "我們的品牌常被 Perplexity 答錯，想建立 entity trust 和可驗證 evidence", "should_trigger": true, "expected_skill": "ai-citation-engineering" },
+    { "query": "audit 一下這個 FAQ 頁哪些說法不夠可引用、缺 author/date/source", "should_trigger": true, "expected_skill": "ai-citation-engineering" },
+    { "query": "How do I make a product guide independently quotable by generative search engines?", "should_trigger": true, "expected_skill": "ai-citation-engineering" },
+    { "query": "幫我找出網站 title、canonical 和 broken links 的一般 SEO 問題", "should_trigger": false, "expected_skill": "seo-audit" },
+    { "query": "寫一篇關於北海道賞楓的 SEO 文章，關鍵字是十月旅遊", "should_trigger": false, "expected_skill": "seo-content-writer" },
+    { "query": "幫 SaaS pricing page 重寫 hero、benefits 和 CTA", "should_trigger": false, "expected_skill": "copywriting" },
+    { "query": "把這份英文新聞稿翻成自然台灣繁中", "should_trigger": false, "expected_skill": null },
+    { "query": "請幫我加 GA4 purchase event", "should_trigger": false, "expected_skill": "analytics-tracking" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "skill_name": "langfuse",
+  "note": "觸發校準：LLM 產品的 trace、generation、成本品質指標、prompt version 與資料集評估；非 agent 流程建模或泛用監控。",
+  "evals": [
+    { "query": "客服 bot 上線後答得變差卻不知道哪一輪 prompt 出問題，想把每次模型呼叫、token 和使用者回饋串起來看", "should_trigger": true, "expected_skill": "langfuse" },
+    { "query": "我需要比較兩版 system prompt 的成本、延遲和人工評分，並保留可回看的請求紀錄", "should_trigger": true, "expected_skill": "langfuse" },
+    { "query": "serverless function 偶爾遺失模型呼叫紀錄，怎麼在結束前把追蹤資料送完？", "should_trigger": true, "expected_skill": "langfuse" },
+    { "query": "幫 AI 搜尋功能做 production observability：每個 session、模型用量、失敗 span 都要能查", "should_trigger": true, "expected_skill": "langfuse" },
+    { "query": "我們有一批黃金問答，想拿來對生成品質打分，順便追蹤 prompt 版本", "should_trigger": true, "expected_skill": "langfuse" },
+    { "query": "How can I trace OpenAI calls in a LangChain app and correlate them with user feedback?", "should_trigger": true, "expected_skill": "langfuse" },
+    { "query": "我要設計多角色 agent 的狀態、分支與人工核准節點", "should_trigger": false, "expected_skill": "langgraph" },
+    { "query": "請幫我建立一套 Grafana 與告警規則，監控 API 的 5xx 和 p95 latency", "should_trigger": false, "expected_skill": "observability-engineer" },
+    { "query": "這個摘要 prompt 不穩定，幫我重寫 few-shot 範例和輸出格式", "should_trigger": false, "expected_skill": "prompt-engineering" },
+    { "query": "我要做 agent benchmark，衡量任務成功率並避免只測 happy path", "should_trigger": false, "expected_skill": "agent-evaluation" },
+    { "query": "請用向量資料庫做文件語意搜尋並改善召回率", "should_trigger": false, "expected_skill": "rag-engineer" },
+    { "query": "幫我把 Node API 改成 rate limit 和結構化 log", "should_trigger": false, "expected_skill": null },
+    { "query": "這段一般文件 token 太長，請縮短", "should_trigger": false, "expected_skill": null },
+    { "query": "文件助理找錯章節，請調整段落切分、混合檢索與召回率評測。", "should_trigger": false, "expected_skill": "rag-engineer" }
+  ]
+}

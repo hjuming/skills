@@ -1,0 +1,20 @@
+{
+  "skill_name": "workflow-automation",
+  "note": "n8n、Temporal、Inngest、durable execution、background jobs 與 orchestrator-worker 的觸發校準；反例分流至 GitHub workflow、LangGraph、訂單領域自動化與部署。",
+  "evals": [
+    { "query": "我們的十步驟付款流程遇到斷線就丟狀態，請設計可續行、幂等且有 checkpoint 的執行方案", "should_trigger": true, "expected_skill": "workflow-automation" },
+    { "query": "Compare n8n, Temporal, and Inngest for a production onboarding flow that needs retries, timeouts, human approval, and observability.", "should_trigger": true, "expected_skill": "workflow-automation" },
+    { "query": "幫我把這個脆弱的 cron script 改成 event-driven background workflow，失敗可重試且不重複發信", "should_trigger": true, "expected_skill": "workflow-automation" },
+    { "query": "一批圖片要並行處理後再聚合結果，請設計 orchestrator-worker、queue 和 failure recovery", "should_trigger": true, "expected_skill": "workflow-automation" },
+    { "query": "Design a durable Temporal workflow for shipment booking; activities need idempotency keys, bounded retries, and compensation on partial failure.", "should_trigger": true, "expected_skill": "workflow-automation" },
+    { "query": "用 Inngest 規劃一個 webhook 驅動的多步流程，要能排程、暂停等人工核准、失敗後從原步驟恢復", "should_trigger": true, "expected_skill": "workflow-automation" },
+    { "query": "幫我寫 GitHub Actions，每次 PR 都跑 lint、test、build 並上傳 artifact", "should_trigger": false, "expected_skill": "github-actions-templates" },
+    { "query": "這個 GitHub workflow 要自動 label issue、留言並合併 Dependabot PR", "should_trigger": false, "expected_skill": "github-workflow-automation" },
+    { "query": "幫我用 LangGraph 做會分支、回看狀態並呼叫 tools 的 LLM agent graph", "should_trigger": false, "expected_skill": "langgraph" },
+    { "query": "把 Gmail 新訂單解析後寫入 Google Sheets，核對商品並發出出貨通知", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我實作特定商城的金流回傳、訂單建立與表單同步", "should_trigger": false, "expected_skill": null },
+    { "query": "我們要把 Next.js 從 staging 發到 production，請設計 canary、驗收與 rollback 流程", "should_trigger": false, "expected_skill": "deployment-procedures" },
+    { "query": "這個 queue 型別錯誤，請修 TypeScript", "should_trigger": false, "expected_skill": "typescript-expert" },
+    { "query": "針對每次 pull request 建 CI，自動跑格式檢查、單元測試與建置並保存報告。", "should_trigger": false, "expected_skill": "github-workflow-automation" }
+  ]
+}

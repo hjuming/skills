@@ -1,0 +1,18 @@
+{
+  "skill_name": "test-driven-development",
+  "note": "功能、bugfix、refactor 動工前的 test-first 觸發校準；反例區分 root-cause debugging、現有測試修復、E2E 設計與 agent eval。",
+  "evals": [
+    { "query": "要新增購物車優惠碼功能，請先用一個失敗測試定義行為，看它紅燈後再寫最少程式", "should_trigger": true, "expected_skill": "test-driven-development" },
+    { "query": "Implement the retry helper using red-green-refactor, one observable behavior at a time, and show that each new test fails for the intended reason first.", "should_trigger": true, "expected_skill": "test-driven-development" },
+    { "query": "修正空 email 也能送出的 bug，但動代碼前先加一個可重現的 regression test", "should_trigger": true, "expected_skill": "test-driven-development" },
+    { "query": "我要重構這個 parser，請用測試先鎖住現有行為，每次只做會回綠的最小變更", "should_trigger": true, "expected_skill": "test-driven-development" },
+    { "query": "Before adding the new webhook state transition, write a focused behavioral test, verify RED, then implement only enough for GREEN.", "should_trigger": true, "expected_skill": "test-driven-development" },
+    { "query": "幫我從零實作這個日期驗證器，每個 edge case 都先用會失敗的測試推進", "should_trigger": true, "expected_skill": "test-driven-development" },
+    { "query": "線上偶發 502，還不知道哪層壞掉，先加診斷證據、重現並追根因", "should_trigger": false, "expected_skill": "systematic-debugging" },
+    { "query": "專案升級 Node 後有一整批 snapshot 與 unit tests 失敗，幫我系統化修完", "should_trigger": false, "expected_skill": "test-fixing" },
+    { "query": "請設計 Playwright 的 login、checkout 與跨瀏覽器 E2E 測試架構", "should_trigger": false, "expected_skill": "e2e-testing-patterns" },
+    { "query": "為客服 agent 建一個離線 benchmark，測量 answer quality、tool success 和 latency", "should_trigger": false, "expected_skill": "agent-evaluation" },
+    { "query": "幫我 review 這個 PR 的測試有沒有真正覆蓋 ticket 驗收標準", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我把 unit、integration 和 browser tests 接進 GitHub Actions，並上傳 coverage artifact", "should_trigger": false, "expected_skill": "github-actions-templates" }
+  ]
+}

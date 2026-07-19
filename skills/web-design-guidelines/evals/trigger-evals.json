@@ -1,0 +1,19 @@
+{
+  "skill_name": "web-design-guidelines",
+  "note": "對既有 UI code 做 accessibility、UX 與 web interface best-practice review 的觸發校準；反例分流至 UI 建置、設計稿審查、React 效能、SEO 與上線用戶實測。",
+  "evals": [
+    { "query": "幫我 review src/components 的 UI code，用 file:line 列出 accessibility、focus、form 和 responsive 問題", "should_trigger": true, "expected_skill": "web-design-guidelines" },
+    { "query": "Audit this checkout interface against current web UX best practices, including keyboard navigation, labels, error states, and touch targets.", "should_trigger": true, "expected_skill": "web-design-guidelines" },
+    { "query": "請檢查這份 HTML/CSS 有沒有對比不足、標題層級錯誤、水平溢出與不可點區域太小", "should_trigger": true, "expected_skill": "web-design-guidelines" },
+    { "query": "Review app/dashboard/*.tsx for interface guideline violations and return only concise actionable findings with exact lines.", "should_trigger": true, "expected_skill": "web-design-guidelines" },
+    { "query": "這個 modal 和 dropdown 在鍵盤操作很怪，請稽核 focus trap、ARIA 和 escape 行為", "should_trigger": true, "expected_skill": "web-design-guidelines" },
+    { "query": "幫我對現有手機版頁面做 UX compliance check，特別看輸入框、validation message 和 sticky controls", "should_trigger": true, "expected_skill": "web-design-guidelines" },
+    { "query": "幫我從零設計一個溫暖極簡的 SaaS dashboard，直接寫可上線 React 元件", "should_trigger": false, "expected_skill": "frontend-design" },
+    { "query": "這是還沒開工的 Figma mockup，請審查視覺層級、交互邏輯與現有設計系統是否對齊", "should_trigger": false, "expected_skill": null },
+    { "query": "這個 React 頁面 LCP 很慢且一直 re-render，請做 bundle、memoization 與 data fetching 效能審查", "should_trigger": false, "expected_skill": "vercel-react-best-practices" },
+    { "query": "幫我查 title、canonical、structured data、sitemap 和內部連結有沒有 SEO 問題", "should_trigger": false, "expected_skill": "seo-audit" },
+    { "query": "請派一位 65 歲長輩實際操作已上線的網站，回報哪裡看不懂、點不到", "should_trigger": false, "expected_skill": null },
+    { "query": "我們的介面太像罐頭 AI，請用現有品牌美學標準調整配色、字體與卡片語彙", "should_trigger": false, "expected_skill": null },
+    { "query": "直接做出一個可部署的 React 訂房頁，包含桌機與手機版樣式。", "should_trigger": false, "expected_skill": "frontend-design" }
+  ]
+}

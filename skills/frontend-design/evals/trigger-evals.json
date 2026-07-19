@@ -1,0 +1,18 @@
+{
+  "skill_name": "frontend-design",
+  "note": "Distinctive, production-grade web UI implementation and visual direction.",
+  "evals": [
+    { "query": "做一個給獨立咖啡店的預約 landing page，React 實作要有明確的 editorial 視覺方向", "should_trigger": true, "expected_skill": "frontend-design" },
+    { "query": "幫我把這個很普通的 dashboard redesign 成有層次、可用且手機不擠的介面", "should_trigger": true, "expected_skill": "frontend-design" },
+    { "query": "Build a polished HTML/CSS product launch page; avoid generic purple SaaS cards", "should_trigger": true, "expected_skill": "frontend-design" },
+    { "query": "請實作一個餐廳菜單 React component，包含有個性的 typography、hover 和 accessibility", "should_trigger": true, "expected_skill": "frontend-design" },
+    { "query": "這個網站想走克制 luxury 風格，請直接寫可運行的 UI 和 CSS variables", "should_trigger": true, "expected_skill": "frontend-design" },
+    { "query": "審查已完成 mockup 是否符合既定設計系統，先不要寫 code", "should_trigger": false, "expected_skill": null },
+    { "query": "Next.js server component 首屏很慢，幫我找 bundle 和 data fetch performance", "should_trigger": false, "expected_skill": "vercel-react-best-practices" },
+    { "query": "設計一套跨產品的 design tokens 和元件治理規則", "should_trigger": false, "expected_skill": null },
+    { "query": "請寫首頁 conversion copy，包括 hero 和 CTA", "should_trigger": false, "expected_skill": "copywriting" },
+    { "query": "給我一張旅遊網站 hero 的 image generation prompt", "should_trigger": false, "expected_skill": null },
+    { "query": "請 review UI code 的 accessibility 和 ARIA 問題", "should_trigger": false, "expected_skill": "web-design-guidelines" },
+    { "query": "請逐行稽核現有購物車介面的鍵盤操作、焦點順序與表單錯誤提示。", "should_trigger": false, "expected_skill": "web-design-guidelines" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "skill_name": "plan-writing",
+  "note": "觸發校準：將目標、限制、里程碑、依賴與風險整理成可執行的工作計畫；非 PRD discovery、單一工程實作或專案現況掃描。",
+  "evals": [
+    { "query": "我們要在六週內搬遷會員系統，請把範圍、里程碑、owner、依賴和回滾點排成執行計畫", "should_trigger": true, "expected_skill": "plan-writing" },
+    { "query": "這些零散需求怎麼拆成一份有優先順序與驗收條件的 launch plan？", "should_trigger": true, "expected_skill": "plan-writing" },
+    { "query": "請規劃從資料盤點、設計、開發到上線的時程，標出卡住就不能往下走的依賴", "should_trigger": true, "expected_skill": "plan-writing" },
+    { "query": "我想把年度內容策略變成每週能執行的任務與檢查點，不要只給方向", "should_trigger": true, "expected_skill": "plan-writing" },
+    { "query": "幫我做一個 migration runbook：pre-check、切換、驗證、rollback 都要有", "should_trigger": true, "expected_skill": "plan-writing" },
+    { "query": "Turn this vague launch goal into a phased delivery plan with risks, owners, and decision gates.", "should_trigger": true, "expected_skill": "plan-writing" },
+    { "query": "新點子還沒定義使用者與需求，先幫我用問題把 PRD 挖清楚", "should_trigger": false, "expected_skill": null },
+    { "query": "請幫我掃整個 repo，找出技術債與最優先的盲點", "should_trigger": false, "expected_skill": "project-blind-spot-review" },
+    { "query": "這份已寫好的架構提案上線前有什麼工程風險？", "should_trigger": false, "expected_skill": null },
+    { "query": "我要建立 Jira board、追蹤 sprint burndown 與團隊進度", "should_trigger": false, "expected_skill": "project-manager" },
+    { "query": "幫我修這個 CI failure", "should_trigger": false, "expected_skill": null },
+    { "query": "把下面中文翻成英文", "should_trigger": false, "expected_skill": null }
+  ]
+}

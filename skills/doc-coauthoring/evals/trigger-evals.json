@@ -1,0 +1,17 @@
+{
+  "skill_name": "doc-coauthoring",
+  "note": "Structured, iterative co-authoring for substantial docs, specs, proposals, and decision records.",
+  "evals": [
+    { "query": "我要和團隊一起把零散討論整理成 RFC，先幫我問背景、讀者和決策目標", "should_trigger": true, "expected_skill": "doc-coauthoring" },
+    { "query": "幫我用分階段方式共同寫一份新產品 proposal，最後要 fresh reader test", "should_trigger": true, "expected_skill": "doc-coauthoring" },
+    { "query": "這個 technical spec 很複雜，我想先資訊傾倒，再逐段建立結構和反覆修稿", "should_trigger": true, "expected_skill": "doc-coauthoring" },
+    { "query": "請帶我做 decision memo，不要直接代寫；先釐清利害關係人和替代方案", "should_trigger": true, "expected_skill": "doc-coauthoring" },
+    { "query": "We need to co-author a design doc with reader testing so another team can act on it", "should_trigger": true, "expected_skill": "doc-coauthoring" },
+    { "query": "我有現成 .docx 合約，請保留 tracked changes 幫我改付款條款", "should_trigger": false, "expected_skill": "docx" },
+    { "query": "幫我把三頁 README 寫完就好，不需要來回訪談", "should_trigger": false, "expected_skill": null },
+    { "query": "請針對現有 PRD 找出工程架構風險", "should_trigger": false, "expected_skill": null },
+    { "query": "將這份英文 proposal 翻成繁體中文", "should_trigger": false, "expected_skill": null },
+    { "query": "寫一篇產品 landing page 的轉換文案", "should_trigger": false, "expected_skill": "copywriting" },
+    { "query": "陪我把跨部門決策文件從背景訪談、讀者需求一路共編到可交接版本。", "should_trigger": true, "expected_skill": "doc-coauthoring" }
+  ]
+}

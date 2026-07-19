@@ -1,0 +1,18 @@
+{
+  "skill_name": "langgraph",
+  "note": "觸發校準：具狀態、分支、迴圈、checkpointer 或 human-in-the-loop 的 agent graph；非單次 prompt、單純 trace 或 RAG 檢索。",
+  "evals": [
+    { "query": "我想讓研究、查詢、撰稿三個 agent 共用狀態，依結果分支後再回到審核節點", "should_trigger": true, "expected_skill": "langgraph" },
+    { "query": "工具呼叫完要回到模型，但最多只能迭代 8 次，並且能中斷後續跑，架構怎麼做？", "should_trigger": true, "expected_skill": "langgraph" },
+    { "query": "請設計一個 state machine：客服問題先分類，付款問題交人工，其餘進知識庫回答", "should_trigger": true, "expected_skill": "langgraph" },
+    { "query": "多步 agent 工作流需要 persistent checkpoint，使用者隔天回來可以從中途恢復", "should_trigger": true, "expected_skill": "langgraph" },
+    { "query": "我需要 reducer 合併各研究節點找到的 sources，不想讓後一個 node 覆蓋前面的資料", "should_trigger": true, "expected_skill": "langgraph" },
+    { "query": "How do I build a stateful tool-calling loop with conditional edges and a human approval pause?", "should_trigger": true, "expected_skill": "langgraph" },
+    { "query": "我要記錄每次模型呼叫的 token、成本和使用者評分，方便找退化", "should_trigger": false, "expected_skill": "langfuse" },
+    { "query": "幫我把文件切段、產 embeddings，再做 hybrid retrieval", "should_trigger": false, "expected_skill": "rag-engineer" },
+    { "query": "這個分類 prompt 常把退款判錯，請設計 few-shot 測試與新指令", "should_trigger": false, "expected_skill": "prompt-engineering" },
+    { "query": "我需要一個 AI SaaS 的整體 backend 架構，包含 model provider、queue 與 API", "should_trigger": false, "expected_skill": "ai-engineer" },
+    { "query": "幫我自動化每天把表單資料同步到 Sheets", "should_trigger": false, "expected_skill": "workflow-automation" },
+    { "query": "解釋 Python 的 async generator 何時該用", "should_trigger": false, "expected_skill": null }
+  ]
+}

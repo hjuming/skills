@@ -1,0 +1,16 @@
+{
+  "skill_name": "docx",
+  "note": "Create, inspect, convert, edit, redline, or preserve formatting in Word .docx files.",
+  "evals": [
+    { "query": "請讀這份 .docx 的修訂紀錄，摘要哪幾條條款被改過", "should_trigger": true, "expected_skill": "docx" },
+    { "query": "幫我把客戶提供的 Word 合約改成 60 天付款，保留 tracked changes", "should_trigger": true, "expected_skill": "docx" },
+    { "query": "我要生成一份排版正式、有封面和表格的 .docx 報價書", "should_trigger": true, "expected_skill": "docx" },
+    { "query": "這個 docx 的圖片和 comments 讀不到，請檢查 OOXML 結構", "should_trigger": true, "expected_skill": "docx" },
+    { "query": "把 Word 文件轉成 PDF 圖片逐頁檢查版面有沒有跑掉", "should_trigger": true, "expected_skill": "docx" },
+    { "query": "幫我共同起草一份 decision doc，想先整理背景再逐段寫", "should_trigger": false, "expected_skill": "doc-coauthoring" },
+    { "query": "把這段 Markdown 做成靜態網站文章", "should_trigger": false, "expected_skill": null },
+    { "query": "修改 Google Sheet 的計算公式與欄位格式", "should_trigger": false, "expected_skill": null },
+    { "query": "從 PDF 擷取表格並合併成一份新 PDF", "should_trigger": false, "expected_skill": "pdf" },
+    { "query": "把這份產品介紹重寫成有說服力的 landing page 文案", "should_trigger": false, "expected_skill": "copywriting" }
+  ]
+}

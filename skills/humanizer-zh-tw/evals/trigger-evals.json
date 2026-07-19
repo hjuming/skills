@@ -1,0 +1,19 @@
+{
+  "skill_name": "humanizer-zh-tw",
+  "note": "觸發校準：針對既有繁體中文文字去除 AI 腔，保留原意與目標語氣；非從零撰稿、翻譯或 SEO 規劃。",
+  "evals": [
+    { "query": "這段繁中新聞稿很像機器寫的，請保留事實但把『不僅是、此外、展望未來』這些腔調拿掉", "should_trigger": true, "expected_skill": "humanizer-zh-tw" },
+    { "query": "把下面客服公告潤成台灣人真的會寫的口氣，別再有罐頭結尾", "should_trigger": true, "expected_skill": "humanizer-zh-tw" },
+    { "query": "我用 AI 寫了演講稿，內容別改太多，只要讓念起來不生硬", "should_trigger": true, "expected_skill": "humanizer-zh-tw" },
+    { "query": "請幫我修這篇繁中貼文的直譯腔和過度形容詞，維持原本專業但不要官樣", "should_trigger": true, "expected_skill": "humanizer-zh-tw" },
+    { "query": "這份產品說明每句都一樣長又一直強調重要性，改得自然一點", "should_trigger": true, "expected_skill": "humanizer-zh-tw" },
+    { "query": "Can you make this Traditional Chinese announcement sound less AI-generated and more like a real editor wrote it?", "should_trigger": true, "expected_skill": "humanizer-zh-tw" },
+    { "query": "我要替新服務從零寫一篇有轉換力的首頁文案", "should_trigger": false, "expected_skill": "copywriting" },
+    { "query": "把這篇中文品牌故事完整翻成日文，語氣要維持溫暖", "should_trigger": false, "expected_skill": null },
+    { "query": "根據關鍵字與搜尋意圖寫一篇 2,000 字的 SEO 文章", "should_trigger": false, "expected_skill": "seo-content-writer" },
+    { "query": "請定義這個寵物品牌的語氣原則，再審核三則貼文有沒有跑掉", "should_trigger": false, "expected_skill": null },
+    { "query": "這份研究資料很亂，幫我規劃成一份可執行的專案計畫", "should_trigger": false, "expected_skill": "plan-writing" },
+    { "query": "幫我校對這份英文合約的拼字和標點", "should_trigger": false, "expected_skill": null },
+    { "query": "這篇台灣中文讀起來像模板拼的，保留資訊只調整句型與節奏，讓編輯口吻自然些。", "should_trigger": true, "expected_skill": "humanizer-zh-tw" }
+  ]
+}

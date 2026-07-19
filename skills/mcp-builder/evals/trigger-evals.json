@@ -1,0 +1,19 @@
+{
+  "skill_name": "mcp-builder",
+  "note": "觸發校準：將外部服務封裝成 MCP server 的工具、resource、schema、transport 與 Inspector 測試；非一般 REST API 或既有 MCP client 設定。",
+  "evals": [
+    { "query": "我要讓 AI 可以安全查詢我們的庫存系統，請規劃可發現、可分頁、有輸入 schema 的工具伺服器", "should_trigger": true, "expected_skill": "mcp-builder" },
+    { "query": "幫我把第三方 CRM API 包成給桌面 agent 用的 TypeScript tools，讀寫操作要有正確 annotations", "should_trigger": true, "expected_skill": "mcp-builder" },
+    { "query": "本機資料分析工具要透過 stdio 給模型呼叫，該怎麼定義 resources、prompts 和 tools？", "should_trigger": true, "expected_skill": "mcp-builder" },
+    { "query": "我的工具回傳太多資料，agent 找不到答案；請重設名稱、pagination 與 actionable error", "should_trigger": true, "expected_skill": "mcp-builder" },
+    { "query": "想用 Python 對接內部 API，做成可以用 Inspector 測試的 model tool server", "should_trigger": true, "expected_skill": "mcp-builder" },
+    { "query": "How should I expose a remote service as streamable HTTP tools with Zod validation and structured responses?", "should_trigger": true, "expected_skill": "mcp-builder" },
+    { "query": "請設計一個公開 REST API 的 OAuth、rate limit 與 input validation", "should_trigger": false, "expected_skill": "api-security-best-practices" },
+    { "query": "我要替 Next.js 做 route handler，串接既有後端 API", "should_trigger": false, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "幫我選擇向量資料庫並做語意搜尋 API", "should_trigger": false, "expected_skill": "rag-engineer" },
+    { "query": "請為客服 agent 設計狀態轉移與人工升級流程", "should_trigger": false, "expected_skill": "langgraph" },
+    { "query": "我的 agent 呼叫工具常失敗，想先量測 trace 和 tool latency", "should_trigger": false, "expected_skill": "langfuse" },
+    { "query": "幫我把現有 CLI 的 README 改清楚", "should_trigger": false, "expected_skill": null },
+    { "query": "用 Node SDK 做一個讓模型查詢工單系統的 MCP 服務，定義 resources 與 tools，並可經 HTTP 傳輸。", "should_trigger": true, "expected_skill": "mcp-builder" }
+  ]
+}

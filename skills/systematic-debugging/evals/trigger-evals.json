@@ -1,0 +1,19 @@
+{
+  "skill_name": "systematic-debugging",
+  "note": "已發生 bug、失敗或異常行為的 root-cause investigation 觸發校準；反例區分 test-first 開發、批次修測試、安全稽核與 spec review。",
+  "evals": [
+    { "query": "線上訂單偶爾重複扣款，我已經修了兩次都沒用，請先幫我找根因再動程式", "should_trigger": true, "expected_skill": "systematic-debugging" },
+    { "query": "CI passes locally but fails during signing. Trace the evidence across workflow, build script, and keychain instead of guessing a fix.", "should_trigger": true, "expected_skill": "systematic-debugging" },
+    { "query": "這個 API 回 500，stack trace 很深，請從錯誤值往上追是哪一層傳進來的", "should_trigger": true, "expected_skill": "systematic-debugging" },
+    { "query": "測試在夜間才 flaky，請先做可重現步驟、比對近期 diff，再提一個最小假說", "should_trigger": true, "expected_skill": "systematic-debugging" },
+    { "query": "After the dependency upgrade our memory use keeps climbing. Gather measurements, isolate the failing component, and identify the root cause.", "should_trigger": true, "expected_skill": "systematic-debugging" },
+    { "query": "上一個 hotfix 又引入新症狀，幫我停止猜測，逐層檢查資料流和環境差異", "should_trigger": true, "expected_skill": "systematic-debugging" },
+    { "query": "我要加一個重試功能，請先寫會失敗的行為測試，再做最小實作", "should_trigger": false, "expected_skill": "test-driven-development" },
+    { "query": "這個 repo 現在有 37 個測試失敗，請分類後逐一修到全綠", "should_trigger": false, "expected_skill": "test-fixing" },
+    { "query": "上線前幫我掃這個 API 有沒有 IDOR、injection、密鑰外洩與依賴風險", "should_trigger": false, "expected_skill": "vulnerability-scanner" },
+    { "query": "這個 PostgreSQL query 沒出錯但很慢，請看 execution plan 並重寫 index 與 SQL", "should_trigger": false, "expected_skill": "database-optimizer" },
+    { "query": "這是功能 spec 和 PR diff，請逐條檢查有沒有漏做或回歸", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我為這個服務設計 logs、traces、SLO 和告警，讓 on-call 找得到問題", "should_trigger": false, "expected_skill": "observability-engineer" },
+    { "query": "付款偶爾少寫一筆，先蒐集證據、縮小故障層，再驗證哪個假設成立。", "should_trigger": true, "expected_skill": "systematic-debugging" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "skill_name": "xlsx",
+  "note": "Excel/CSV 建立、編輯、分析、公式、格式、圖表與 recalculation 的觸發校準；反例分流至財務模型、訂單自動化、簡報、文件與 SQL。",
+  "evals": [
+    { "query": "請把這份 sales.csv 整理成有三個 worksheet、匯總公式、條件格式和月趨勢圖的 Excel 檔", "should_trigger": true, "expected_skill": "xlsx" },
+    { "query": "Update the attached workbook without changing its template: add the new quarter, extend formulas, preserve styles, and verify there are no formula errors.", "should_trigger": true, "expected_skill": "xlsx" },
+    { "query": "幫我讀這個 .xlsx 的所有 sheets，找出異常值、缺失資料和各區營收差異", "should_trigger": true, "expected_skill": "xlsx" },
+    { "query": "這份工作簿有 #REF! 和 #DIV/0!，請修正公式、重新計算並確認錯誤數為零", "should_trigger": true, "expected_skill": "xlsx" },
+    { "query": "Create a formatted inventory workbook with dropdown validation, frozen headers, low-stock highlighting, and formulas that recalculate when quantities change.", "should_trigger": true, "expected_skill": "xlsx" },
+    { "query": "請在不破壞原有 macro 與公式的前提下編輯 .xlsm，新增資料頁與跨表連結", "should_trigger": true, "expected_skill": "xlsx" },
+    { "query": "幫我建一份五年 SaaS 財務模型，包含 ARR、churn、cash runway、情境分析與估值", "should_trigger": false, "expected_skill": "startup-financial-modeling" },
+    { "query": "從 Gmail 讀取訂單信、自動寫入 Google Sheets，再寄出確認信", "should_trigger": false, "expected_skill": null },
+    { "query": "把這份數據報告做成 12 頁可簡報的 PowerPoint，要有圖表與 speaker notes", "should_trigger": false, "expected_skill": "pptx" },
+    { "query": "幫我在這份 Word 合約加入修訂記號、批註和頁眉，保留原排版", "should_trigger": false, "expected_skill": "docx" },
+    { "query": "這批 CSV 要匯入 PostgreSQL，請設計 schema、COPY 指令與去重 SQL", "should_trigger": false, "expected_skill": "sql-pro" },
+    { "query": "用 pandas 訓練一個預測模型，輸入是 CSV，只需輸出 Python 分析結果，不產生試算表", "should_trigger": false, "expected_skill": "python-pro" },
+    { "query": "這段文章提到 Excel，請翻成英文", "should_trigger": false, "expected_skill": null },
+    { "query": "把附件中的季度試算表新增一張摘要頁，延伸計算欄並維持原有格式。", "should_trigger": true, "expected_skill": "xlsx" }
+  ]
+}

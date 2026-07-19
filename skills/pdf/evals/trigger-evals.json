@@ -1,0 +1,19 @@
+{
+  "skill_name": "pdf",
+  "note": "觸發校準：PDF 擷取、表格、合併拆分、旋轉、產生、表單與批次處理；非 Word、投影片或一般圖片編修。",
+  "evals": [
+    { "query": "我有 300 份掃描報告，要抓出每頁的表格欄位後整理成 CSV", "should_trigger": true, "expected_skill": "pdf" },
+    { "query": "請把這些月結檔按客戶拆開，旋轉歪掉的頁面，最後各自輸出", "should_trigger": true, "expected_skill": "pdf" },
+    { "query": "合約 PDF 有可填欄位，我想批次帶入資料又不能破壞原本的表單設定", "should_trigger": true, "expected_skill": "pdf" },
+    { "query": "需要把三份附件合併、加頁碼與書籤，並讀出文件 metadata", "should_trigger": true, "expected_skill": "pdf" },
+    { "query": "這份 PDF 的文字抽取順序很亂，幫我判斷該用哪個工具處理 layout 與表格", "should_trigger": true, "expected_skill": "pdf" },
+    { "query": "How can I generate invoices as PDFs and validate that the output pages are not clipped?", "should_trigger": true, "expected_skill": "pdf" },
+    { "query": "幫我把這份 Word 合約改成可共同編輯的範本並保留修訂紀錄", "should_trigger": false, "expected_skill": "docx" },
+    { "query": "我要從一份簡報模板複製版型、替換每頁標題並輸出 deck", "should_trigger": false, "expected_skill": "pptx" },
+    { "query": "請把 Excel 的銷售資料做成樞紐分析與圖表", "should_trigger": false, "expected_skill": "xlsx" },
+    { "query": "我需要設計一張社群宣傳圖，調整照片色彩與文字安全區", "should_trigger": false, "expected_skill": null },
+    { "query": "這個檔案要不要壓縮成 zip？", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我寫一封寄送附件的 email", "should_trigger": false, "expected_skill": null },
+    { "query": "我要編輯這份工作簿的樞紐表、公式與欄位格式。", "should_trigger": false, "expected_skill": "xlsx" }
+  ]
+}

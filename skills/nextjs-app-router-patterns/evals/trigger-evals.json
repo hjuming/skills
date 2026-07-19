@@ -1,0 +1,19 @@
+{
+  "skill_name": "nextjs-app-router-patterns",
+  "note": "觸發校準：Next.js App Router 的 Server Components、data cache、Server Actions、streaming、parallel/intercepting routes 與 Pages Router 遷移。",
+  "evals": [
+    { "query": "這個 Next 14 頁面資料一直在 client fetch，怎麼搬到 server component 又保留 loading streaming？", "should_trigger": true, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "我要從舊的 pages/ 遷移到 app/，動態路由、layout 和 metadata 怎麼拆？", "should_trigger": true, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "購物車送出後想用 server action 更新資料並重新驗證快取，有哪些正確模式？", "should_trigger": true, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "搜尋結果頁要做 modal intercepting route，重新整理時仍能落到完整頁面", "should_trigger": true, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "同一個 dashboard 要 parallel routes 顯示通知與 analytics，怎麼處理 error/loading boundary？", "should_trigger": true, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "How do I choose cache and revalidation boundaries for server-rendered data in an App Router application?", "should_trigger": true, "expected_skill": "nextjs-app-router-patterns" },
+    { "query": "請把這個純 React component library 的 props 設計得更容易組合與重用", "should_trigger": false, "expected_skill": "vercel-composition-patterns" },
+    { "query": "我要優化 React dashboard 的 re-render、bundle 與圖片載入效能", "should_trigger": false, "expected_skill": "vercel-react-best-practices" },
+    { "query": "幫我規劃 Supabase RLS、migration 和資料表關聯", "should_trigger": false, "expected_skill": "supabase-postgres-best-practices" },
+    { "query": "這個 landing page 視覺太像 AI 產物，請做成有質感的前端設計", "should_trigger": false, "expected_skill": "frontend-design" },
+    { "query": "我要在 Cloudflare Workers 寫一個 JSON API", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我解釋 TypeScript generics", "should_trigger": false, "expected_skill": null },
+    { "query": "在 Next.js 新專案規劃 app/ 下的巢狀版型、伺服器端元件與資料重新驗證策略。", "should_trigger": true, "expected_skill": "nextjs-app-router-patterns" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "skill_name": "seo-content-writer",
+  "note": "SEO 內容創作觸發校準；正例要求根據關鍵字或 topic brief 產出可發布內容，反例分流至稽核、文案、程式化 SEO 與 AIO 等 sibling skills。",
+  "evals": [
+    { "query": "主關鍵字是「台北寵物旅館」，請寫一篇 1800 字的完整指南，要有 H2、FAQ 和 meta description", "should_trigger": true, "expected_skill": "seo-content-writer" },
+    { "query": "Here is a keyword brief for zero-waste packaging. Turn it into a search-optimized article with title options, internal-link ideas, and a clear CTA.", "should_trigger": true, "expected_skill": "seo-content-writer" },
+    { "query": "我要搶「企業危機處理流程」的自然搜尋排名，請先列大綱再寫成可發布的長文", "should_trigger": true, "expected_skill": "seo-content-writer" },
+    { "query": "Write a 1,200-word comparison page targeting 'Temporal vs Inngest', using the secondary keywords naturally and ending with a decision-focused FAQ.", "should_trigger": true, "expected_skill": "seo-content-writer" },
+    { "query": "根據這份產品 brief 寫一篇人類好讀、關鍵字不堆疊的 SEO 文章，並附 5 個標題備選", "should_trigger": true, "expected_skill": "seo-content-writer" },
+    { "query": "幫我把這篇既有文章改寫成更完整的 pillar page，補上語意關鍵字、摘要與行動呼籲", "should_trigger": true, "expected_skill": "seo-content-writer" },
+    { "query": "幫我稽核現有網站為什麼排名下降，先找 technical SEO 與 on-page 問題，不用寫新文章", "should_trigger": false, "expected_skill": "seo-audit" },
+    { "query": "我要做五千個城市落地頁，請設計 template、資料欄位和 canonical 策略", "should_trigger": false, "expected_skill": "programmatic-seo" },
+    { "query": "這個 landing page 的 hero 不夠有說服力，幫我改標題、副標和 CTA 就好", "should_trigger": false, "expected_skill": "copywriting" },
+    { "query": "請把這篇中文文章在不改資訊的前提下去掉 AI 味，讓語氣更像台灣編輯", "should_trigger": false, "expected_skill": "humanizer-zh-tw" },
+    { "query": "用同一批產品資料寫 Instagram 輪播貼文、LinkedIn 貼文和電子報開場", "should_trigger": false, "expected_skill": "content-creator" },
+    { "query": "幫我重構這頁 FAQ，讓 LLM 容易擷取並引用，每個結論都要有來源證據", "should_trigger": false, "expected_skill": "ai-citation-engineering" }
+  ]
+}

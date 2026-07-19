@@ -1,0 +1,17 @@
+{
+  "skill_name": "api-security-best-practices",
+  "note": "API boundary hardening: authn/authz, validation, webhooks, rate limits, and safe outputs.",
+  "evals": [
+    { "query": "review 我們的 GET /orders/:id，怕登入使用者能讀到別人的訂單", "should_trigger": true, "expected_skill": "api-security-best-practices" },
+    { "query": "幫 webhook endpoint 加 signature 驗證、replay 防護和 idempotency", "should_trigger": true, "expected_skill": "api-security-best-practices" },
+    { "query": "Express API 現在直接信任 body 裡的 role 和 tenantId，請給最小安全修補", "should_trigger": true, "expected_skill": "api-security-best-practices" },
+    { "query": "請設計 public signup API 的 rate limit、body size 與錯誤回應，不要洩漏 stack trace", "should_trigger": true, "expected_skill": "api-security-best-practices" },
+    { "query": "GraphQL admin mutation 只靠前端 hide button，幫我做 server-side authorization audit", "should_trigger": true, "expected_skill": "api-security-best-practices" },
+    { "query": "信用卡收款流程要降低 PCI scope，選 hosted checkout 還是直收", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我讓 Supabase browser client 使用 service role key", "should_trigger": false, "expected_skill": "frontend-security-coder" },
+    { "query": "scan repo 裡是否有 npm dependency 漏洞", "should_trigger": false, "expected_skill": "vulnerability-scanner" },
+    { "query": "建立 GitHub Actions 在 PR 觸發 security scan", "should_trigger": false, "expected_skill": "github-workflow-automation" },
+    { "query": "production DB 要 DROP 一張 table，請直接執行", "should_trigger": false, "expected_skill": "agent-process-guard" },
+    { "query": "請稽核多租戶 API 是否可能讓 A 公司讀到 B 公司的 invoice，並補上物件層授權。", "should_trigger": true, "expected_skill": "api-security-best-practices" }
+  ]
+}

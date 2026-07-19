@@ -1,0 +1,19 @@
+{
+  "skill_name": "pptx",
+  "note": "觸發校準：建立、編輯、套用模板、驗證與修復 PowerPoint 投影片；非內容策略、PDF 或一般文件。",
+  "evals": [
+    { "query": "把這份策略大綱做成 12 頁的可簡報投影片，並檢查文字有沒有超出頁面", "should_trigger": true, "expected_skill": "pptx" },
+    { "query": "我有既有企業簡報模板，請保留版型，替換每頁 placeholder 文字和圖表資料", "should_trigger": true, "expected_skill": "pptx" },
+    { "query": "這份 deck 匯出後字被裁掉，想用縮圖逐頁找出重疊與對比問題再修", "should_trigger": true, "expected_skill": "pptx" },
+    { "query": "幫我從現有投影片抽出所有文字與 shape inventory，再批次更新數字", "should_trigger": true, "expected_skill": "pptx" },
+    { "query": "我要用程式產生季度簡報，文字用 HTML 排版，圖表再放進預留區", "should_trigger": true, "expected_skill": "pptx" },
+    { "query": "How do I edit slide XML safely, validate the package, and preserve the original layout?", "should_trigger": true, "expected_skill": "pptx" },
+    { "query": "請先幫我想投資人 pitch 的敘事、每頁重點與 speaker notes", "should_trigger": false, "expected_skill": null },
+    { "query": "我需要把報告排版成可列印的 PDF，含封面、頁碼和目錄", "should_trigger": false, "expected_skill": "pdf" },
+    { "query": "幫我把一份 Word 提案書改成正式合約格式", "should_trigger": false, "expected_skill": "docx" },
+    { "query": "請設計全新簡報的品牌配色、字型和圖像風格規範", "should_trigger": false, "expected_skill": null },
+    { "query": "這個 CSV 的資料如何做加總？", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我翻譯三句標題成日文", "should_trigger": false, "expected_skill": null },
+    { "query": "請翻譯三句投影片標題成英文", "should_trigger": false, "expected_skill": null }
+  ]
+}
