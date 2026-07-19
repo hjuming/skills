@@ -1,7 +1,7 @@
 # Public Skills (generated — do not edit by hand)
 
-Source of truth: private repo hjuming/skills-wedo  ->  skills/<name>/
-Regenerate with: scripts/export-public-skills.sh
+Generated from the WEDO-maintained public selection.
+Regenerate through the maintainer export workflow; do not edit this directory by hand.
 
 ## Included (29)
 
