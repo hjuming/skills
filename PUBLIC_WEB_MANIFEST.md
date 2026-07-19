@@ -87,6 +87,35 @@ allow-file favicon_io/android-chrome-192x192.png
 allow-file favicon_io/android-chrome-512x512.png
 allow-file favicon_io/site.webmanifest
 allow-tree skills
+selected-skill agent-evaluation
+selected-skill agent-process-guard
+selected-skill ai-citation-engineering
+selected-skill ai-engineer
+selected-skill api-security-best-practices
+selected-skill copywriting
+selected-skill doc-coauthoring
+selected-skill docx
+selected-skill frontend-design
+selected-skill github-workflow-automation
+selected-skill humanizer-zh-tw
+selected-skill langfuse
+selected-skill langgraph
+selected-skill mcp-builder
+selected-skill nextjs-app-router-patterns
+selected-skill pdf
+selected-skill plan-writing
+selected-skill pptx
+selected-skill prompt-engineering
+selected-skill rag-engineer
+selected-skill seo-content-writer
+selected-skill skill-creator
+selected-skill systematic-debugging
+selected-skill test-driven-development
+selected-skill typescript-expert
+selected-skill vulnerability-scanner
+selected-skill web-design-guidelines
+selected-skill workflow-automation
+selected-skill xlsx
 deny-tree web/content
 deny-tree web/pages
 deny-tree web/design
@@ -97,8 +126,10 @@ deny-file web/README.md
 deny-tree .git
 ```
 
-Every public `id` in `skills-data.js` must materialize as
-`skills/<id>/SKILL.md`; missing selected skills fail the release.
+Every public `id` in `skills-data.js` must appear exactly once as a
+`selected-skill` above and materialize as `skills/<id>/SKILL.md`. Adding or
+removing a public skill therefore requires two explicit edits; any mismatch or
+missing selected skill fails the release.
 
 ## Explicitly Excluded
 
