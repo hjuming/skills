@@ -1,8 +1,8 @@
 // Service Worker - Skills WEDO
-// Version: 4.3.0
+// Version: 4.4.0
 
-const CACHE_NAME = 'skills-cache-v4.3';
-const RUNTIME_CACHE = 'skills-runtime-v4.3';
+const CACHE_NAME = 'skills-cache-v4.4';
+const RUNTIME_CACHE = 'skills-runtime-v4.4';
 
 // 需要快取的靜態資源
 const STATIC_ASSETS = [
@@ -30,7 +30,7 @@ const STATIC_ASSETS = [
 
 // 安裝事件 - 預快取靜態資源
 self.addEventListener('install', event => {
-  console.log('[SW] Installing Service Worker v4.3...');
+  console.log('[SW] Installing Service Worker v4.4...');
 
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -44,7 +44,7 @@ self.addEventListener('install', event => {
 
 // 啟用事件 - 清理舊快取
 self.addEventListener('activate', event => {
-  console.log('[SW] Activating Service Worker v4.3...');
+  console.log('[SW] Activating Service Worker v4.4...');
 
   event.waitUntil(
     caches.keys()

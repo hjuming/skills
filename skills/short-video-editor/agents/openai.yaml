@@ -1,0 +1,4 @@
+interface:
+  display_name: "Short Video Editor"
+  short_description: "把提供的素材剪成有 QA 證據的直式短影音"
+  default_prompt: "Use $short-video-editor to inspect my source video, preserve the original, propose an editing strategy for approval, then create and verify a vertical short."

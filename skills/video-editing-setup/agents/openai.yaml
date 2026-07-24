@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Editing Setup"
+  short_description: "安全檢查與準備 AI 短影音剪輯環境"
+  default_prompt: "Use $video-editing-setup to inspect my AI video-editing environment first, list required changes, and wait for approval before installing or changing anything."

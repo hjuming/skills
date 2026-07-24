@@ -459,6 +459,39 @@ const skillsData = [
         link: "https://github.com/hjuming/skills"
     },
     {
+        id: "video-editing-setup",
+        name: "video-editing-setup",
+        icon: "SET",
+        category: "content",
+        categoryName: "內容與溝通",
+        level: "進階",
+        persona: "想安全準備 AI 剪輯環境的人",
+        description: "先檢查 video-use、FFmpeg、ffprobe、轉寫憑證與選用動畫環境，列出變更並取得同意後才安裝。",
+        examples: [
+            "請用 video-editing-setup 檢查我的短影音剪輯環境，先不要安裝或上傳素材。",
+            "FFmpeg 和 video-use 無法使用，請先診斷並列出安全修復步驟。"
+        ],
+        recommendationReason: "把環境變更與實際剪片分開，能避免 Agent 靜默安裝、洩漏憑證或誤動既有 repo。",
+        link: "https://github.com/hjuming/skills"
+    },
+    {
+        id: "short-video-editor",
+        name: "short-video-editor",
+        icon: "9:16",
+        category: "content",
+        categoryName: "內容與溝通",
+        level: "進階",
+        persona: "需要把素材剪成直式短影音的人",
+        description: "把使用者提供的影片整理成 Reels、Shorts 或 TikTok，涵蓋逐字稿、剪輯策略、EDL、字幕、預覽核准與正式 QA。",
+        examples: [
+            "請用 short-video-editor 把這支訪談剪成 60 秒 9:16 Reels，原檔不要動。",
+            "先整理這支口播影片的逐字稿與剪輯策略，等我確認後再做預覽。"
+        ],
+        recommendationReason: "把剪輯決策、上傳同意、預覽與 final 驗證寫成明確 gate，避免只有指令卻沒有可交付成片。",
+        link: "https://github.com/hjuming/skills",
+        featured: true
+    },
+    {
         id: "vulnerability-scanner",
         name: "vulnerability-scanner",
         icon: "掃",

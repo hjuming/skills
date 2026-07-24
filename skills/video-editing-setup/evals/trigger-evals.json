@@ -1,0 +1,18 @@
+{
+  "skill_name": "video-editing-setup",
+  "note": "Environment setup and readiness checks for the AI short-video toolchain, not media editing.",
+  "evals": [
+    { "query": "請先檢查我的 AI 短影音剪輯環境，確認 video-use、FFmpeg、ffprobe 和 ElevenLabs 設定是否完整。", "should_trigger": true, "expected_skill": "video-editing-setup" },
+    { "query": "我要安裝 video-use 做影片剪輯，先列出會動到哪些 repo 和套件，等我核准再安裝。", "should_trigger": true, "expected_skill": "video-editing-setup" },
+    { "query": "FFmpeg 找不到，ElevenLabs 憑證也沒被剪輯工具讀到，請安全修復環境但不要上傳影片。", "should_trigger": true, "expected_skill": "video-editing-setup" },
+    { "query": "Verify my local short-video editing setup and optional HyperFrames readiness without running paid transcription.", "should_trigger": true, "expected_skill": "video-editing-setup" },
+    { "query": "video-use repo 有未提交修改，幫我檢查為什麼不能更新，不要 reset 或覆寫。", "should_trigger": true, "expected_skill": "video-editing-setup" },
+    { "query": "把 /work/interview.mov 剪成 60 秒直式 Reels，先整理逐字稿再提剪輯策略。", "should_trigger": false, "expected_skill": "short-video-editor" },
+    { "query": "Premiere Pro 要怎麼做多機位同步和 proxy？", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我用 FFmpeg 把 MP4 轉成 GIF。", "should_trigger": false, "expected_skill": null },
+    { "query": "請 review 這個影片上傳 API 的驗證與 rate limit。", "should_trigger": false, "expected_skill": "api-security-best-practices" },
+    { "query": "幫我做一張直式短影音封面圖。", "should_trigger": false, "expected_skill": null },
+    { "query": "剪輯環境已經好了，請只替這支口播影片產生字幕並輸出成片。", "should_trigger": false, "expected_skill": "short-video-editor" },
+    { "query": "請診斷網站影片播放器偶發白屏的 root cause。", "should_trigger": false, "expected_skill": "systematic-debugging" }
+  ]
+}

@@ -3,7 +3,7 @@
 Generated from the WEDO-maintained public selection.
 Regenerate through the maintainer export workflow; do not edit this directory by hand.
 
-## Included (29)
+## Included (31)
 
 - agent-evaluation
 - agent-process-guard
@@ -26,10 +26,12 @@ Regenerate through the maintainer export workflow; do not edit this directory by
 - prompt-engineering
 - rag-engineer
 - seo-content-writer
+- short-video-editor
 - skill-creator
 - systematic-debugging
 - test-driven-development
 - typescript-expert
+- video-editing-setup
 - vulnerability-scanner
 - web-design-guidelines
 - workflow-automation

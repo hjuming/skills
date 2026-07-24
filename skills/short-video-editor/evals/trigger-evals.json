@@ -1,0 +1,18 @@
+{
+  "skill_name": "short-video-editor",
+  "note": "Evidence-backed editing of user-supplied media into a vertical short, distinct from setup and generic software help.",
+  "evals": [
+    { "query": "請把 /work/訪談.mp4 剪成 60 秒 9:16 Reels，保留逐字稿、字幕、預覽和 QA 證據。", "should_trigger": true, "expected_skill": "short-video-editor" },
+    { "query": "這支口播 MOV 幫我剪成 Shorts，先用 ffprobe 檢查，再提出 4 到 8 句策略讓我確認。", "should_trigger": true, "expected_skill": "short-video-editor" },
+    { "query": "請替我提供的影片做逐字轉寫、挑精華、粗剪與繁中字幕，原檔不能動。", "should_trigger": true, "expected_skill": "short-video-editor" },
+    { "query": "Turn /media/diary.mov into a verified vertical TikTok with an EDL, 720p preview, and 1080x1920 final.", "should_trigger": true, "expected_skill": "short-video-editor" },
+    { "query": "把這段客戶訪談剪成 90 秒精華，第一次上傳 ElevenLabs 前先告訴我費用風險並等同意。", "should_trigger": true, "expected_skill": "short-video-editor" },
+    { "query": "請檢查並安裝 video-use、FFmpeg、ffprobe 和 HyperFrames。", "should_trigger": false, "expected_skill": "video-editing-setup" },
+    { "query": "CapCut 裡怎麼套用自動節拍和轉場？", "should_trigger": false, "expected_skill": null },
+    { "query": "Premiere Pro 多機位剪輯的快捷鍵有哪些？", "should_trigger": false, "expected_skill": null },
+    { "query": "請幫我生成一張 TikTok 影片封面，不需要剪片。", "should_trigger": false, "expected_skill": null },
+    { "query": "把這段 podcast 內容改寫成 30 秒短影音腳本，但我沒有提供影片。", "should_trigger": false, "expected_skill": "copywriting" },
+    { "query": "幫我修復 ffmpeg command not found，暫時不要處理素材。", "should_trigger": false, "expected_skill": "video-editing-setup" },
+    { "query": "請檢查影片上傳頁的 accessibility 和 touch target。", "should_trigger": false, "expected_skill": "web-design-guidelines" }
+  ]
+}

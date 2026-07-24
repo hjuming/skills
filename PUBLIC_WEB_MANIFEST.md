@@ -108,10 +108,12 @@ selected-skill pptx
 selected-skill prompt-engineering
 selected-skill rag-engineer
 selected-skill seo-content-writer
+selected-skill short-video-editor
 selected-skill skill-creator
 selected-skill systematic-debugging
 selected-skill test-driven-development
 selected-skill typescript-expert
+selected-skill video-editing-setup
 selected-skill vulnerability-scanner
 selected-skill web-design-guidelines
 selected-skill workflow-automation
