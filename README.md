@@ -21,9 +21,9 @@ Skills WEDO 的目標，是幫 AI 初學者跨過「知道 Skills 有用」到�
 
 ## 精選 Skills（可直接取用）
 
-本倉庫的 [`skills/`](skills/) 收錄 **29 個精選、通用、初學者友善的 Skills**，由 WEDO 的私有 SSOT 匯出。完整清單見 [`skills/README.md`](skills/README.md)，涵蓋文件（`pdf`、`docx`、`xlsx`、`pptx`）、內容（`humanizer-zh-tw`、`copywriting`、`seo-content-writer`）、開發（`typescript-expert`、`nextjs-app-router-patterns`）、除錯與測試（`systematic-debugging`、`test-driven-development`）、AI 工程（`mcp-builder`、`rag-engineer`、`langgraph`）與基礎工作流（`skill-creator`、`prompt-engineering`、`plan-writing`）等。
+本倉庫的 [`skills/`](skills/) 收錄 **31 個精選、通用、初學者友善的 Skills**，由 WEDO 的私有 SSOT 匯出。完整清單見 [`skills/README.md`](skills/README.md)，涵蓋文件（`pdf`、`docx`、`xlsx`、`pptx`）、內容（`humanizer-zh-tw`、`copywriting`、`seo-content-writer`）、開發（`typescript-expert`、`nextjs-app-router-patterns`）、除錯與測試（`systematic-debugging`、`test-driven-development`）、AI 工程（`mcp-builder`、`rag-engineer`、`langgraph`）與基礎工作流（`skill-creator`、`prompt-engineering`、`plan-writing`）等。
 
-安裝一個 Skill，就是把資料夾複製到你的工具目錄：
+安裝一個 Skill，就是把**整個資料夾**複製到你的工具目錄：
 
 ```bash
 # Claude Code
@@ -32,7 +32,13 @@ cp -R skills/skill-creator ~/.claude/skills/
 cp -R skills/skill-creator ~/.codex/skills/
 ```
 
+務必用 `-R` 複製整個資料夾，不要只抓 `SKILL.md`。多數 Skill 的 `SKILL.md` 只是入口，實際的範例、對照表與檢查清單放在同層的 `references/`、`scripts/`、`assets/` 裡；只複製單一檔案會讓 AI 讀到指路表卻找不到被指到的檔案。
+
 裝好後在對話直接用自然語言觸發，例如：「請用 `pdf` 幫我整理這份 PDF 的重點」「請用 `systematic-debugging` 追這個測試失敗的根因」。不需要斜線指令，講到名字或用途就會載入。
+
+### 為什麼 SKILL.md 這麼短
+
+每次觸發 Skill，`SKILL.md` 全文都會進入 AI 的上下文。所以本站的 Skill 一律把 `SKILL.md` 控制在「何時用 + 決策流程 + 指到哪個檔案」的入口大小，細節下沉到 `references/`，讓 AI 只在真正需要時才去讀。你自己寫 Skill 時建議照同樣的結構：入口精簡、細節分檔、底部放一張指路表。
 
 ## 本地預覽
 
@@ -77,8 +83,9 @@ WEDO 內部 workflow Skills、歷史 skill archive、內部設定文件與完整
 ## 維護規則（對外）
 
 - 只納入面向公開訪客的內容；不放入 API key、環境變數、客戶機密流程或私人本機路徑。
-- `skills/` 由私有倉庫的匯出流程產生，不在此手改；要調整請回到私有 SSOT。
+- `skills/` 與本 README 皆由私有倉庫的匯出流程產生，不在此手改；要調整請回到私有 SSOT。
 - 任何新增推薦 Skill，需具備明確用途、可複製範例 prompt，以及可公開查閱的來源。
+- 每個 Skill 的 `SKILL.md` 需可被 YAML parser 解析，`name` 與資料夾名一致，`description` 寫清楚觸發時機與「什麼情況該改用別的 Skill」，且不超過 500 行。
 
 ## 授權與引用
 
