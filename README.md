@@ -46,18 +46,17 @@ python3 -m http.server 4190 --bind 127.0.0.1
 
 ### 專案參與指標
 
-最後更新：`2026-07-23`（自動更新）
+最後更新：`2026-07-28`（自動更新）
 
 - GitHub Stars（本前台倉庫 `hjuming/skills`）：`1`
 - 每月網站到訪（或轉換）量：`待接 Cloudflare 權杖或 Zone ID`
 - 每月 issue / PR：`Issue 開啟 0 / 關閉 0；PR 開啟 0 / 關閉 0`
-- 每季主要更新次數：`1`
+- 每季主要更新次數：`84`
 
 #### 自動更新
 
 - 手動同步：`node scripts/update-public-readme-metrics.mjs`
 - 自動同步：GitHub Actions 每日 04:00 UTC 自動執行 .github/workflows/update-public-readme-metrics.yml
-- GitHub Stars、issue / PR、季度更新次數會由 API 即時抓取更新；網站流量維持手動更新，或設定 `WEBSITE_MONTHLY_VISITS` 後改為自動化。
 - GitHub Stars、issue / PR、季度更新次數會由 API 即時抓取更新；網站流量可選：
   - `WEBSITE_MONTHLY_VISITS_SOURCE=cloudflare`（Cloudflare Analytics）
   - `WEBSITE_MONTHLY_VISITS_SOURCE=ga4`（GA4 Data API）

@@ -74,6 +74,7 @@ allow-file _redirects
 allow-file _headers
 allow-file README.md
 allow-file PUBLIC_WEB_MANIFEST.md
+allow-file .gitignore
 allow-file assets/og-skills-wedo-1200x630.png
 allow-file assets/leo-49-logo.png
 allow-file assets/leo-49-point.png
@@ -125,8 +126,17 @@ deny-tree handoffs
 deny-file web/.htaccess
 deny-file web/DEVELOPMENT.md
 deny-file web/README.md
-deny-tree .git
+deny-tree .wrangler
+deny-file .wrangler/cache/wrangler-account.json
+deny-file .wrangler/cache/pages.json
 ```
+
+`.git` 不列在 `deny-tree`：`_public_web/` 同時是公開站 repo
+(`github.com/hjuming/skills.git`) 的工作 checkout，`.git` 必須存在才能推送。
+改由 `scripts/verify-public-export-contract.sh` 檢查 `.git` 的 `origin` 是否
+等於預期的公開 remote——是則放行，不是（代表誤混入他庫或殘留巢狀 repo）則
+release 失敗。Wrangler 快取含 Cloudflare 帳號 ID 與帳號名稱，一律不得進入
+公開輸出目錄。
 
 Every public `id` in `skills-data.js` must appear exactly once as a
 `selected-skill` above and materialize as `skills/<id>/SKILL.md`. Adding or
