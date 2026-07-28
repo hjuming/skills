@@ -1,6 +1,6 @@
 ---
 name: test-driven-development
-description: Use when implementing any feature or bugfix, before writing implementation code
+description: "Use during L1/L2 code implementation for a feature, bugfix, refactor, or behavior change, before production code. Do not use for planning, review-only work, root-cause diagnosis, documentation, or configuration-only changes. Also do not use when tests are already failing and you just need them green — that is test-fixing; for choosing an E2E framework or building a suite use e2e-testing-patterns."
 ---
 
 # Test-Driven Development (TDD)
@@ -360,6 +360,13 @@ When adding mocks or test utilities, read @testing-anti-patterns.md to avoid com
 - Testing mock behavior instead of real behavior
 - Adding test-only methods to production classes
 - Mocking without understanding dependencies
+
+## Seam Discipline & Anti-Cheating (Pocock supplement)
+
+When the task needs a test seam or public-interface decision, read @pocock-tdd-supplement.md before deciding WHAT to test and WHERE:
+- Test behavior through public interfaces at pre-agreed seams; never bypass the interface to verify
+- No horizontal slicing (all tests first, then all code) — vertical tracer bullets only
+- No tautological tests — expected values must come from an independent source of truth
 
 ## Final Rule
 

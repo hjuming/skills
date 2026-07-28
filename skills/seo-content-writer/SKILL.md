@@ -1,8 +1,6 @@
 ---
 name: seo-content-writer
-description: Writes SEO-optimized content based on provided keywords and topic
-  briefs. Creates engaging, comprehensive content following best practices. Use
-  PROACTIVELY for content creation tasks.
+description: "Writes SEO-optimized content based on provided keywords and topic briefs. Creates engaging, comprehensive content following best practices for search visibility. Use when drafting a long-form article, blog post, landing page copy, or pillar page around target keywords, including outline, headings, internal links, and FAQ. 觸發詞：SEO 文章、關鍵字文章、部落格長文、內容行銷、SEO article, keyword-driven content, blog post, pillar page. For diagnosing an existing site's SEO health use seo-audit; for template-driven pages at scale use programmatic-seo; for zh-TW de-AI-ification of the draft use humanizer-zh-tw."
 metadata:
   model: sonnet
 ---
