@@ -77,13 +77,7 @@
       function isWedoProductionHost(){
         try {
           var hostname=String(w.location&&w.location.hostname||'').trim().toLowerCase().replace(/\.$/,'');
-          if (!hostname || hostname.length>253) return false;
-          if (hostname!=='wedopr.com'&&!hostname.endsWith('.wedopr.com')) return false;
-          var labels=hostname.split('.');
-          for (var index=0;index<labels.length;index++) {
-            if (!/^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/.test(labels[index])) return false;
-          }
-          return !(w.navigator&&w.navigator.webdriver);
+          return hostname==='skills.wedopr.com'&&!(w.navigator&&w.navigator.webdriver);
         } catch (error) {
           return false;
         }
