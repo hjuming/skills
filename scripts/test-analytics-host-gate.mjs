@@ -54,10 +54,7 @@ function runBootstrap({ hostname, webdriver = false, locationThrows = false, nav
 }
 
 const allowedHosts = [
-  'wedopr.com',
-  'www.wedopr.com',
   'skills.wedopr.com',
-  'deep.skills.wedopr.com',
   'skills.wedopr.com.',
 ];
 
@@ -82,6 +79,12 @@ const blockedHosts = [
   '::1',
   'skills-wedo.pages.dev',
   'preview.skills.wedopr.com.pages.dev',
+  'staging.skills.wedopr.com',
+  'preview.skills.wedopr.com',
+  'wedopr.com',
+  'www.wedopr.com',
+  'book.wedopr.com',
+  'deep.skills.wedopr.com',
   'staging.example.com',
   'wedopr.com.example.com',
   'evilwedopr.com',
