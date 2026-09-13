@@ -72,12 +72,56 @@
     <link rel="alternate" type="text/plain" href="/llms.txt" title="Skills WEDO AI-readable summary">
     <link rel="stylesheet" href="styles.css?v=20260610-five-modules">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVR6KRJYMB"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-LVR6KRJYMB');
+    (function(w,d){
+      function isWedoProductionHost(){
+        try {
+          var hostname=String(w.location&&w.location.hostname||'').trim().toLowerCase().replace(/\.$/,'');
+          if (!hostname || hostname.length>253) return false;
+          if (hostname!=='wedopr.com'&&!hostname.endsWith('.wedopr.com')) return false;
+          var labels=hostname.split('.');
+          for (var index=0;index<labels.length;index++) {
+            if (!/^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/.test(labels[index])) return false;
+          }
+          return !(w.navigator&&w.navigator.webdriver);
+        } catch (error) {
+          return false;
+        }
+      }
+
+      var analyticsAllowed=isWedoProductionHost();
+      w.__WEDO_ANALYTICS_ALLOWED__=analyticsAllowed;
+      if (!analyticsAllowed) return;
+
+      w.dataLayer=w.dataLayer||[];
+      w.gtag=function(){w.dataLayer.push(arguments);};
+
+      var firstScript=d.getElementsByTagName('script')[0];
+      var gaScript=d.createElement('script');
+      gaScript.async=true;
+      gaScript.src='https://www.googletagmanager.com/gtag/js?id=G-LVR6KRJYMB';
+      firstScript.parentNode.insertBefore(gaScript,firstScript);
+      w.gtag('js',new Date());
+      w.gtag('config','G-LVR6KRJYMB');
+
+      if (w.__WEDO_ROLLUP_GTM__) return;
+      w.__WEDO_ROLLUP_GTM__=true;
+      w.dataLayer.push({
+        event:'wedo_rollup_context',
+        rollup_property:'WEDOPR',
+        project_name:'Skills WEDO',
+        project_host:w.location.hostname,
+        project_scope:'project',
+        page_path:w.location.pathname+w.location.search,
+        page_location:w.location.href
+      });
+      w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+
+      var gtmScript=d.createElement('script');
+      gtmScript.async=true;
+      gtmScript.src='https://www.googletagmanager.com/gtm.js?id=GTM-TNM3J7XS';
+      firstScript.parentNode.insertBefore(gtmScript,firstScript);
+    })(window,document);
     </script>
 
     <script type="application/ld+json">
@@ -216,27 +260,6 @@
     }
     </script>
 
-    <script>
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];
-      if (w.__WEDO_ROLLUP_GTM__) return;
-      w.__WEDO_ROLLUP_GTM__=true;
-      w[l].push({
-        event:'wedo_rollup_context',
-        rollup_property:'WEDOPR',
-        project_name:'Skills WEDO',
-        project_host:w.location.hostname,
-        project_scope:'project',
-        page_path:w.location.pathname+w.location.search,
-        page_location:w.location.href
-      });
-      w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-      f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TNM3J7XS');
-    </script>
 </head>
 
 <body>
