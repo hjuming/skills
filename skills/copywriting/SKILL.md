@@ -62,6 +62,18 @@ Gather this context (ask if not provided):
 - Each section should advance one argument
 - Build a logical flow down the page
 
+### Short Form post 框架
+
+撰寫社群貼文、短版導讀或單一 CTA 文案時，可使用 `../wedo-writing-os/references/writing-formulas.md` 的 Nicolas Cole 十型工具箱。框架用來找切入角度，不取代頁面的主要轉換結構；先選一個主框架，必要時再用一個輔助框架補上證據、例子或行動。
+
+- 訣竅、步驟：適合讓讀者照做。
+- 問題、理由：適合回答疑問與說明必要性。
+- 個人故事、經驗教訓：適合建立作者觀點，只能使用真實經歷。
+- 數據、範例：適合支撐判斷，必須能回查來源。
+- 犯錯、好處：適合新手提醒；好處寫具體改變，不保證成效。
+
+短文維持一個核心問題、一個可辨識細節與一個主要 CTA。不要把十種框架逐項列完，也不要用短文框架掩蓋頁面必須說清楚的產品、對象、限制與行動。
+
 ---
 
 ## Writing Style Rules
@@ -131,7 +143,6 @@ Puns, wit, and humor make copy memorable—but only if it fits the brand and doe
 - **page-cro**: If the page structure/strategy needs work, not just copy
 - **email-sequence**: For email copywriting
 - **popup-cro**: For popup and modal copy
-- **ab-test-setup**: To test copy variations properly
 
 ## 詳細內容（references）
 

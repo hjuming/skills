@@ -1,7 +1,6 @@
----
-name: prompt-engineering
-description: Expert guide on prompt engineering patterns, best practices, and optimization techniques. Use when user wants to improve prompts, learn prompting strategies, or debug agent behavior.
----
+# prompt-engineering（2026-10-19 併入 `ai-engineer`）
+
+> 原 Skill `prompt-engineering` 的內容，2026-10-19 SSOT 精簡時併入。原資料夾（含 evals、agents 與未搬的檔案）封存於 `skills-wedo/_archive/2026-10-19-ssot-slimming/prompt-engineering/`。文中路徑以 `ai-engineer` 根目錄為準。
 
 # Prompt Engineering Patterns
 

@@ -11,9 +11,9 @@
     { "query": "我要加一個重試功能，請先寫會失敗的行為測試，再做最小實作", "should_trigger": false, "expected_skill": "test-driven-development" },
     { "query": "這個 repo 現在有 37 個測試失敗，請分類後逐一修到全綠", "should_trigger": false, "expected_skill": "test-fixing" },
     { "query": "上線前幫我掃這個 API 有沒有 IDOR、injection、密鑰外洩與依賴風險", "should_trigger": false, "expected_skill": "vulnerability-scanner" },
-    { "query": "這個 PostgreSQL query 沒出錯但很慢，請看 execution plan 並重寫 index 與 SQL", "should_trigger": false, "expected_skill": "database-optimizer" },
+    { "query": "這個 PostgreSQL query 沒出錯但很慢，請看 execution plan 並重寫 index 與 SQL", "should_trigger": false, "expected_skill": "supabase-postgres-best-practices" },
     { "query": "這是功能 spec 和 PR diff，請逐條檢查有沒有漏做或回歸", "should_trigger": false, "expected_skill": null },
-    { "query": "幫我為這個服務設計 logs、traces、SLO 和告警，讓 on-call 找得到問題", "should_trigger": false, "expected_skill": "observability-engineer" },
+    { "query": "幫我為這個服務設計 logs、traces、SLO 和告警，讓 on-call 找得到問題", "should_trigger": false, "expected_skill": null },
     { "query": "付款偶爾少寫一筆，先蒐集證據、縮小故障層，再驗證哪個假設成立。", "should_trigger": true, "expected_skill": "systematic-debugging" }
   ]
 }

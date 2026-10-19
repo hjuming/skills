@@ -11,7 +11,7 @@
     { "query": "新點子還沒定義使用者與需求，先幫我用問題把 PRD 挖清楚", "should_trigger": false, "expected_skill": null },
     { "query": "請幫我掃整個 repo，找出技術債與最優先的盲點", "should_trigger": false, "expected_skill": "project-blind-spot-review" },
     { "query": "這份已寫好的架構提案上線前有什麼工程風險？", "should_trigger": false, "expected_skill": null },
-    { "query": "我要建立 Jira board、追蹤 sprint burndown 與團隊進度", "should_trigger": false, "expected_skill": "project-manager" },
+    { "query": "我要建立 Jira board、追蹤 sprint burndown 與團隊進度", "should_trigger": false, "expected_skill": "project-blind-spot-review" },
     { "query": "幫我修這個 CI failure", "should_trigger": false, "expected_skill": null },
     { "query": "把下面中文翻成英文", "should_trigger": false, "expected_skill": null }
   ]

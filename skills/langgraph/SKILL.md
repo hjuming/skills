@@ -284,4 +284,4 @@ Clear separation of concerns.
 
 ## Related Skills
 
-Works well with: `crewai`, `autonomous-agents`, `langfuse`, `structured-output`
+Works well with: `crewai`, `autonomous-agents`, `structured-output`

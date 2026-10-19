@@ -11,7 +11,7 @@
     { "query": "線上偶發 502，還不知道哪層壞掉，先加診斷證據、重現並追根因", "should_trigger": false, "expected_skill": "systematic-debugging" },
     { "query": "專案升級 Node 後有一整批 snapshot 與 unit tests 失敗，幫我系統化修完", "should_trigger": false, "expected_skill": "test-fixing" },
     { "query": "請設計 Playwright 的 login、checkout 與跨瀏覽器 E2E 測試架構", "should_trigger": false, "expected_skill": "e2e-testing-patterns" },
-    { "query": "為客服 agent 建一個離線 benchmark，測量 answer quality、tool success 和 latency", "should_trigger": false, "expected_skill": "agent-evaluation" },
+    { "query": "為客服 agent 建一個離線 benchmark，測量 answer quality、tool success 和 latency", "should_trigger": false, "expected_skill": null },
     { "query": "幫我 review 這個 PR 的測試有沒有真正覆蓋 ticket 驗收標準", "should_trigger": false, "expected_skill": null },
     { "query": "幫我把 unit、integration 和 browser tests 接進 GitHub Actions，並上傳 coverage artifact", "should_trigger": false, "expected_skill": "github-actions-templates" }
   ]

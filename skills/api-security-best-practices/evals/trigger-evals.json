@@ -10,8 +10,8 @@
     { "query": "信用卡收款流程要降低 PCI scope，選 hosted checkout 還是直收", "should_trigger": false, "expected_skill": null },
     { "query": "幫我讓 Supabase browser client 使用 service role key", "should_trigger": false, "expected_skill": "frontend-security-coder" },
     { "query": "scan repo 裡是否有 npm dependency 漏洞", "should_trigger": false, "expected_skill": "vulnerability-scanner" },
-    { "query": "建立 GitHub Actions 在 PR 觸發 security scan", "should_trigger": false, "expected_skill": "github-workflow-automation" },
-    { "query": "production DB 要 DROP 一張 table，請直接執行", "should_trigger": false, "expected_skill": "agent-process-guard" },
+    { "query": "建立 GitHub Actions 在 PR 觸發 security scan", "should_trigger": false, "expected_skill": "github-actions-templates" },
+    { "query": "production DB 要 DROP 一張 table，請直接執行", "should_trigger": false, "expected_skill": "ai-development-control-log" },
     { "query": "請稽核多租戶 API 是否可能讓 A 公司讀到 B 公司的 invoice，並補上物件層授權。", "should_trigger": true, "expected_skill": "api-security-best-practices" }
   ]
 }

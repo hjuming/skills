@@ -72,52 +72,6 @@
     <link rel="alternate" type="text/plain" href="/llms.txt" title="Skills WEDO AI-readable summary">
     <link rel="stylesheet" href="styles.css?v=20260610-five-modules">
 
-    <script>
-    (function(w,d){
-      function isWedoProductionHost(){
-        try {
-          var hostname=String(w.location&&w.location.hostname||'').trim().toLowerCase().replace(/\.$/,'');
-          return hostname==='skills.wedopr.com'&&!(w.navigator&&w.navigator.webdriver);
-        } catch (error) {
-          return false;
-        }
-      }
-
-      var analyticsAllowed=isWedoProductionHost();
-      w.__WEDO_ANALYTICS_ALLOWED__=analyticsAllowed;
-      if (!analyticsAllowed) return;
-
-      w.dataLayer=w.dataLayer||[];
-      w.gtag=function(){w.dataLayer.push(arguments);};
-
-      var firstScript=d.getElementsByTagName('script')[0];
-      var gaScript=d.createElement('script');
-      gaScript.async=true;
-      gaScript.src='https://www.googletagmanager.com/gtag/js?id=G-LVR6KRJYMB';
-      firstScript.parentNode.insertBefore(gaScript,firstScript);
-      w.gtag('js',new Date());
-      w.gtag('config','G-LVR6KRJYMB');
-
-      if (w.__WEDO_ROLLUP_GTM__) return;
-      w.__WEDO_ROLLUP_GTM__=true;
-      w.dataLayer.push({
-        event:'wedo_rollup_context',
-        rollup_property:'WEDOPR',
-        project_name:'Skills WEDO',
-        project_host:w.location.hostname,
-        project_scope:'project',
-        page_path:w.location.pathname+w.location.search,
-        page_location:w.location.href
-      });
-      w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-
-      var gtmScript=d.createElement('script');
-      gtmScript.async=true;
-      gtmScript.src='https://www.googletagmanager.com/gtm.js?id=GTM-TNM3J7XS';
-      firstScript.parentNode.insertBefore(gtmScript,firstScript);
-    })(window,document);
-    </script>
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -186,36 +140,28 @@
           "numberOfItems": 30,
           "itemListOrder": "https://schema.org/ItemListOrderAscending",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "skill-creator" },
-            { "@type": "ListItem", "position": 2, "name": "prompt-engineering" },
-            { "@type": "ListItem", "position": 3, "name": "plan-writing" },
-            { "@type": "ListItem", "position": 4, "name": "concise-planning" },
-            { "@type": "ListItem", "position": 5, "name": "humanizer-zh-tw" },
-            { "@type": "ListItem", "position": 6, "name": "copywriting" },
-            { "@type": "ListItem", "position": 7, "name": "seo-content-writer" },
-            { "@type": "ListItem", "position": 8, "name": "doc-coauthoring" },
-            { "@type": "ListItem", "position": 9, "name": "pdf" },
-            { "@type": "ListItem", "position": 10, "name": "docx" },
-            { "@type": "ListItem", "position": 11, "name": "xlsx" },
-            { "@type": "ListItem", "position": 12, "name": "pptx" },
-            { "@type": "ListItem", "position": 13, "name": "frontend-design" },
-            { "@type": "ListItem", "position": 14, "name": "web-design-guidelines" },
-            { "@type": "ListItem", "position": 15, "name": "typescript-expert" },
-            { "@type": "ListItem", "position": 16, "name": "nextjs-app-router-patterns" },
-            { "@type": "ListItem", "position": 17, "name": "systematic-debugging" },
-            { "@type": "ListItem", "position": 18, "name": "test-driven-development" },
-            { "@type": "ListItem", "position": 19, "name": "playwright-skill" },
-            { "@type": "ListItem", "position": 20, "name": "github-workflow-automation" },
-            { "@type": "ListItem", "position": 21, "name": "workflow-automation" },
-            { "@type": "ListItem", "position": 22, "name": "mcp-builder" },
-            { "@type": "ListItem", "position": 23, "name": "ai-engineer" },
-            { "@type": "ListItem", "position": 24, "name": "rag-engineer" },
-            { "@type": "ListItem", "position": 25, "name": "langgraph" },
-            { "@type": "ListItem", "position": 26, "name": "langfuse" },
-            { "@type": "ListItem", "position": 27, "name": "agent-evaluation" },
-            { "@type": "ListItem", "position": 28, "name": "ai-citation-engineering" },
-            { "@type": "ListItem", "position": 29, "name": "api-security-best-practices" },
-            { "@type": "ListItem", "position": 30, "name": "vulnerability-scanner" }
+            { "@type": "ListItem", "position": 1, "name": "plan-writing" },
+            { "@type": "ListItem", "position": 2, "name": "concise-planning" },
+            { "@type": "ListItem", "position": 3, "name": "humanizer-zh-tw" },
+            { "@type": "ListItem", "position": 4, "name": "copywriting" },
+            { "@type": "ListItem", "position": 5, "name": "seo-content-writer" },
+            { "@type": "ListItem", "position": 6, "name": "doc-coauthoring" },
+            { "@type": "ListItem", "position": 7, "name": "pdf" },
+            { "@type": "ListItem", "position": 8, "name": "docx" },
+            { "@type": "ListItem", "position": 9, "name": "xlsx" },
+            { "@type": "ListItem", "position": 10, "name": "pptx" },
+            { "@type": "ListItem", "position": 11, "name": "frontend-design" },
+            { "@type": "ListItem", "position": 12, "name": "web-design-guidelines" },
+            { "@type": "ListItem", "position": 13, "name": "typescript-expert" },
+            { "@type": "ListItem", "position": 14, "name": "nextjs-app-router-patterns" },
+            { "@type": "ListItem", "position": 15, "name": "systematic-debugging" },
+            { "@type": "ListItem", "position": 16, "name": "test-driven-development" },
+            { "@type": "ListItem", "position": 17, "name": "playwright-skill" },
+            { "@type": "ListItem", "position": 18, "name": "ai-engineer" },
+            { "@type": "ListItem", "position": 19, "name": "langgraph" },
+            { "@type": "ListItem", "position": 20, "name": "ai-citation-engineering" },
+            { "@type": "ListItem", "position": 21, "name": "api-security-best-practices" },
+            { "@type": "ListItem", "position": 22, "name": "vulnerability-scanner" }
           ]
         }
       ]
@@ -239,7 +185,7 @@
           "name": "新手應該先安裝哪些 Skills？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "建議先從 skill-creator、prompt-engineering、plan-writing、humanizer-zh-tw、pdf、systematic-debugging 等高頻且低風險的 Skills 開始。"
+            "text": "建議先從 plan-writing、humanizer-zh-tw、copywriting、pdf、systematic-debugging 等高頻且低風險的 Skills 開始；想把自己的流程做成 Skill，可以用 Claude Code／Codex 內建的 skill-creator，不用另外安裝。"
           }
         },
         {
@@ -254,6 +200,47 @@
     }
     </script>
 
+    <script id="analytics-loaders">
+    (function(w,d){
+      var location,navigator,hostname,pagePath,pageLocation;
+      try {
+        location=w.location;
+        navigator=w.navigator;
+        hostname=String(location.hostname||'').toLowerCase();
+        pagePath=location.pathname+location.search;
+        pageLocation=location.href;
+        if(hostname!=='skills.wedopr.com'||navigator.webdriver) return;
+      } catch(error) {
+        return;
+      }
+
+      w.dataLayer=w.dataLayer||[];
+      w.gtag=function(){w.dataLayer.push(arguments);};
+      var ga=d.createElement('script'),first=d.getElementsByTagName('script')[0];
+      ga.async=true;
+      ga.src='https://www.googletagmanager.com/gtag/js?id=G-LVR6KRJYMB';
+      first.parentNode.insertBefore(ga,first);
+      w.gtag('js',new Date());
+      w.gtag('config','G-LVR6KRJYMB');
+
+      if(w.__WEDO_ROLLUP_GTM__) return;
+      w.__WEDO_ROLLUP_GTM__=true;
+      w.dataLayer.push({
+        event:'wedo_rollup_context',
+        rollup_property:'WEDOPR',
+        project_name:'Skills WEDO',
+        project_host:hostname,
+        project_scope:'project',
+        page_path:pagePath,
+        page_location:pageLocation
+      });
+      w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var gtm=d.createElement('script');
+      gtm.async=true;
+      gtm.src='https://www.googletagmanager.com/gtm.js?id=GTM-TNM3J7XS';
+      first.parentNode.insertBefore(gtm,first);
+    })(window,document);
+    </script>
 </head>
 
 <body>
@@ -408,7 +395,7 @@
                         <p>如果你在 Codex、Claude Code、VS Code Agent 這類能操作檔案的環境，把下面「新手安裝請求」整段貼給 AI，它可以協助安裝。Claude 網頁版通常要改用 ZIP 上傳。</p>
                         <div class="quick-command">
                             <code>請幫我安裝 Skills WEDO 新手入門 Skills</code>
-                            <button class="copy-btn" type="button" data-copy="我是 AI Skills 初學者。請幫我安裝 Skills WEDO 推薦的新手入門 Skills。請先判斷我目前使用的工具：Claude Code 安裝到 ~/.claude/skills/；Codex 安裝到 ~/.codex/skills/；如果兩者都有，兩邊都安裝。如果你沒有檔案或終端機權限，請改成給我一步一步可複製的終端機指令。推薦清單：https://skills.wedopr.com/#skills-section；網站公開 GitHub：https://github.com/hjuming/skills。請先協助尋找並安裝這 5 個：skill-creator、prompt-engineering、humanizer-zh-tw、pdf、systematic-debugging。完成後請告訴我：1. 安裝到哪個資料夾；2. 如何在對話中呼叫每個 Skill；3. 下一步去哪裡看更多熱門推薦 Skills：https://skills.wedopr.com/#skills-section">複製請求</button>
+                            <button class="copy-btn" type="button" data-copy="我是 AI Skills 初學者。請幫我安裝 Skills WEDO 推薦的新手入門 Skills。請先判斷我目前使用的工具：Claude Code 安裝到 ~/.claude/skills/；Codex 安裝到 ~/.codex/skills/；如果兩者都有，兩邊都安裝。如果你沒有檔案或終端機權限，請改成給我一步一步可複製的終端機指令。推薦清單：https://skills.wedopr.com/#skills-section；網站公開 GitHub：https://github.com/hjuming/skills。請先協助尋找並安裝這 5 個：plan-writing、humanizer-zh-tw、copywriting、pdf、systematic-debugging（skill-creator 已內建在 Claude Code／Codex，不用另外安裝）。完成後請告訴我：1. 安裝到哪個資料夾；2. 如何在對話中呼叫每個 Skill；3. 下一步去哪裡看更多熱門推薦 Skills：https://skills.wedopr.com/#skills-section">複製請求</button>
                         </div>
                     </article>
                     <article class="quick-card">
@@ -432,7 +419,7 @@
                     <article class="quick-card">
                         <span class="step-number">5</span>
                         <h3>建立自己的工作流</h3>
-                        <p>當一件事每週重複、規則固定、每次都要重新解釋，就適合變成自己的 Skill。先用 <code>skill-creator</code> 做最小版本。</p>
+                        <p>當一件事每週重複、規則固定、每次都要重新解釋，就適合變成自己的 Skill。先用 Claude Code／Codex 內建的 <code>skill-creator</code> 做最小版本，不用另外安裝。</p>
                         <div class="quick-command">
                             <code>請用 skill-creator 幫我整理第一個 Skill</code>
                             <button class="copy-btn" type="button" data-copy="請用 skill-creator 幫我把「每週整理一篇文章摘要」做成第一個 Skill 草稿。請包含 name、description、使用時機、工作流程、輸出格式、驗證方式，以及哪些內容應該拆到 references/。">複製工作流請求</button>
@@ -461,9 +448,9 @@ https://skills.wedopr.com/#skills-section
 https://github.com/hjuming/skills
 
 請先協助尋找並安裝這 5 個：
-- skill-creator
-- prompt-engineering
+- plan-writing
 - humanizer-zh-tw
+- copywriting
 - pdf
 - systematic-debugging
 
@@ -666,8 +653,8 @@ Use this skill when the task requires [clear trigger].
         <span id="toastMessage"></span>
     </div>
 
-    <script src="skills-data.js?v=20260610"></script>
-    <script src="app.js?v=20260610"></script>
+    <script src="skills-data.js?v=20261019"></script>
+    <script src="app.js?v=20261019"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

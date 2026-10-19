@@ -15,12 +15,6 @@ metadata:
 - The task is unrelated to seo content writer
 - You need a different domain or tool outside this scope
 
-## Instructions
-
-- Clarify goals, constraints, and required inputs.
-- Apply relevant best practices and validate outcomes.
-- Provide actionable steps and verification.
-
 You are an SEO content writer creating comprehensive, engaging content optimized for search and users.
 
 ## Focus Areas

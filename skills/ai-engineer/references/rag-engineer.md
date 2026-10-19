@@ -1,8 +1,6 @@
----
-name: rag-engineer
-description: "Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vector databases, chunking strategies, and retrieval optimization for LLM applications. Use when: building RAG, vector search, embeddings, semantic search, document retrieval."
-source: vibeship-spawner-skills (Apache 2.0)
----
+# rag-engineer（2026-10-19 併入 `ai-engineer`）
+
+> 原 Skill `rag-engineer` 的內容，2026-10-19 SSOT 精簡時併入。source：vibeship-spawner-skills (Apache 2.0)。原資料夾（含 evals、agents 與未搬的檔案）封存於 `skills-wedo/_archive/2026-10-19-ssot-slimming/rag-engineer/`。文中路徑以 `ai-engineer` 根目錄為準。
 
 # RAG Engineer
 

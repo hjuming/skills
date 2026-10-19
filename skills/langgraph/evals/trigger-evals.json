@@ -8,11 +8,11 @@
     { "query": "多步 agent 工作流需要 persistent checkpoint，使用者隔天回來可以從中途恢復", "should_trigger": true, "expected_skill": "langgraph" },
     { "query": "我需要 reducer 合併各研究節點找到的 sources，不想讓後一個 node 覆蓋前面的資料", "should_trigger": true, "expected_skill": "langgraph" },
     { "query": "How do I build a stateful tool-calling loop with conditional edges and a human approval pause?", "should_trigger": true, "expected_skill": "langgraph" },
-    { "query": "我要記錄每次模型呼叫的 token、成本和使用者評分，方便找退化", "should_trigger": false, "expected_skill": "langfuse" },
-    { "query": "幫我把文件切段、產 embeddings，再做 hybrid retrieval", "should_trigger": false, "expected_skill": "rag-engineer" },
-    { "query": "這個分類 prompt 常把退款判錯，請設計 few-shot 測試與新指令", "should_trigger": false, "expected_skill": "prompt-engineering" },
+    { "query": "我要記錄每次模型呼叫的 token、成本和使用者評分，方便找退化", "should_trigger": false, "expected_skill": null },
+    { "query": "幫我把文件切段、產 embeddings，再做 hybrid retrieval", "should_trigger": false, "expected_skill": "ai-engineer" },
+    { "query": "這個分類 prompt 常把退款判錯，請設計 few-shot 測試與新指令", "should_trigger": false, "expected_skill": "ai-engineer" },
     { "query": "我需要一個 AI SaaS 的整體 backend 架構，包含 model provider、queue 與 API", "should_trigger": false, "expected_skill": "ai-engineer" },
-    { "query": "幫我自動化每天把表單資料同步到 Sheets", "should_trigger": false, "expected_skill": "workflow-automation" },
+    { "query": "幫我自動化每天把表單資料同步到 Sheets", "should_trigger": false, "expected_skill": null },
     { "query": "解釋 Python 的 async generator 何時該用", "should_trigger": false, "expected_skill": null }
   ]
 }

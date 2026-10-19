@@ -30,8 +30,6 @@ An AI Skill is a reusable workflow package. Its core file is usually `SKILL.md`,
 
 ## Recommended Starter Skills
 
-- skill-creator
-- prompt-engineering
 - plan-writing
 - concise-planning
 - humanizer-zh-tw
@@ -49,14 +47,8 @@ An AI Skill is a reusable workflow package. Its core file is usually `SKILL.md`,
 - systematic-debugging
 - test-driven-development
 - playwright-skill
-- github-workflow-automation
-- workflow-automation
-- mcp-builder
 - ai-engineer
-- rag-engineer
 - langgraph
-- langfuse
-- agent-evaluation
 - ai-citation-engineering
 - api-security-best-practices
 - vulnerability-scanner

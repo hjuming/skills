@@ -1,9 +1,6 @@
 ---
 name: ai-engineer
-description: Build production-ready LLM applications, advanced RAG systems, and
-  intelligent agents. Implements vector search, multimodal AI, agent
-  orchestration, and enterprise AI integrations. Use PROACTIVELY for LLM
-  features, chatbots, AI agents, or AI-powered applications.
+description: "Build production-ready LLM applications, RAG systems, and intelligent agents: vector search, embeddings, chunking and retrieval optimization, prompt engineering patterns and prompt debugging, multimodal AI, agent orchestration. Use for LLM features, chatbots, AI agents, RAG pipelines, semantic search, document retrieval, improving prompts or debugging agent behavior. 觸發詞：RAG、向量搜尋、embedding、語意搜尋、提示詞優化、prompt engineering、AI 助理、LLM 應用. Claude API／Anthropic SDK 專屬功能走 claude-api；LangGraph 狀態圖走 langgraph。"
 metadata:
   model: inherit
 ---
@@ -169,3 +166,12 @@ Expert AI engineer specializing in LLM application development, RAG systems, and
 - "Implement semantic search with reranking for improved retrieval accuracy"
 - "Design an A/B testing framework for comparing different LLM prompts"
 - "Create a real-time AI content moderation system with custom classifiers"
+
+## 併入的參考（2026-10-19）
+
+原為獨立 Skill，SSOT 精簡時併入本 Skill；任務命中下列情境時再讀。
+
+| 情境 | 讀這個檔 |
+| --- | --- |
+| RAG：embedding、向量庫、chunking、檢索優化 | `references/rag-engineer.md` |
+| 提示詞模式、最佳實踐、除錯 agent 行為 | `references/prompt-engineering.md` |

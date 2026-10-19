@@ -2,40 +2,6 @@
 // This list intentionally excludes WEDO-internal workflow skills.
 const skillsData = [
     {
-        id: "skill-creator",
-        name: "skill-creator",
-        icon: "✦",
-        category: "basics",
-        categoryName: "基礎工作流",
-        level: "入門必學",
-        persona: "想做自己的第一個 Skill",
-        description: "協助你把重複任務整理成 SKILL.md，包含命名、description、觸發條件、範例與資料夾結構。",
-        examples: [
-            "請用 skill-creator 幫我把「每週產出 SEO 文章簡報」整理成一個可重複使用的 Skill。",
-            "請檢查我的 SKILL.md 是否有清楚的 description、使用時機與步驟。"
-        ],
-        recommendationReason: "新手最該先學會的不是收集更多 Skills，而是把自己的工作流程封裝起來。",
-        link: "https://github.com/hjuming/skills",
-        featured: true
-    },
-    {
-        id: "prompt-engineering",
-        name: "prompt-engineering",
-        icon: "⌘",
-        category: "basics",
-        categoryName: "基礎工作流",
-        level: "入門必學",
-        persona: "想讓指令更穩定的人",
-        description: "整理高品質提示詞設計模式，讓任務描述、上下文、限制與輸出格式更清楚。",
-        examples: [
-            "請用 prompt-engineering 幫我把這段模糊需求改成可交付的 AI 任務指令。",
-            "請把我的 prompt 改成更適合長期重複使用的工作流。"
-        ],
-        recommendationReason: "好的 Skills 來自好的任務定義。這是所有 AI 工作流的底層能力。",
-        link: "https://github.com/hjuming/skills",
-        featured: true
-    },
-    {
         id: "plan-writing",
         name: "plan-writing",
         icon: "01",
@@ -281,55 +247,6 @@ const skillsData = [
         link: "https://github.com/hjuming/skills"
     },
     {
-        id: "github-workflow-automation",
-        name: "github-workflow-automation",
-        icon: "GH",
-        category: "automation",
-        categoryName: "測試與自動化",
-        level: "進階",
-        persona: "需要 PR、Issue、CI 工作流的人",
-        description: "協助自動化 GitHub 工作流，包含 PR 檢查、CI 追蹤、review 回應與發布流程。",
-        examples: [
-            "請用 github-workflow-automation 幫我整理這次變更的 PR 描述。",
-            "請檢查 CI 失敗原因，並提出最小修復計畫。"
-        ],
-        recommendationReason: "團隊協作類 Skill 的代表，能把重複的工程流程標準化。",
-        link: "https://github.com/hjuming/skills"
-    },
-    {
-        id: "workflow-automation",
-        name: "workflow-automation",
-        icon: "流",
-        category: "automation",
-        categoryName: "測試與自動化",
-        level: "進階",
-        persona: "想把日常流程自動化的人",
-        description: "協助設計可自動化的多步驟流程，包含觸發條件、輸入輸出、例外處理與驗證。",
-        examples: [
-            "請用 workflow-automation 幫我設計一個每週內容整理流程。",
-            "請把這個手動 SOP 拆成可以交給 AI 執行的工作流。"
-        ],
-        recommendationReason: "當你開始做第二、第三個 Skill，這個能力會變成核心。",
-        link: "https://github.com/hjuming/skills"
-    },
-    {
-        id: "mcp-builder",
-        name: "mcp-builder",
-        icon: "MCP",
-        category: "ai",
-        categoryName: "AI 工程",
-        level: "進階",
-        persona: "想把 AI 接到工具的人",
-        description: "協助建立高品質 MCP 伺服器，讓 AI 能安全地連接外部服務、資料與工具。",
-        examples: [
-            "請用 mcp-builder 幫我規劃一個讀取內部資料庫的 MCP server。",
-            "請檢查這個 MCP tool schema 是否清楚、安全、容易被 agent 使用。"
-        ],
-        recommendationReason: "MCP 是工具能力，Skills 是使用方法；兩者搭配才會變成可靠系統。",
-        link: "https://github.com/hjuming/skills",
-        featured: true
-    },
-    {
         id: "ai-engineer",
         name: "ai-engineer",
         icon: "AI",
@@ -343,22 +260,6 @@ const skillsData = [
             "請檢查這個 Agent 系統有哪些資料流、工具權限與評估缺口。"
         ],
         recommendationReason: "適合從單一 Skill 走向完整 AI 應用架構的人。",
-        link: "https://github.com/hjuming/skills"
-    },
-    {
-        id: "rag-engineer",
-        name: "rag-engineer",
-        icon: "RAG",
-        category: "ai",
-        categoryName: "AI 工程",
-        level: "進階",
-        persona: "需要知識庫與檢索的人",
-        description: "協助設計 Retrieval-Augmented Generation 系統，包含 chunking、embedding、retrieval 與評估。",
-        examples: [
-            "請用 rag-engineer 幫我設計這批 PDF 的 RAG 切片與索引策略。",
-            "請診斷這個 RAG 回答不準的可能原因。"
-        ],
-        recommendationReason: "當資料量變大，Skills 能把 RAG 的判斷流程穩定下來。",
         link: "https://github.com/hjuming/skills"
     },
     {
@@ -376,55 +277,6 @@ const skillsData = [
         ],
         recommendationReason: "把流程顯性化後，Skills 可以成為每個節點的作業規範。",
         link: "https://github.com/hjuming/skills"
-    },
-    {
-        id: "langfuse",
-        name: "langfuse",
-        icon: "OBS",
-        category: "ai",
-        categoryName: "AI 工程",
-        level: "進階",
-        persona: "需要觀測 LLM 品質的人",
-        description: "協助導入 Langfuse 觀測、trace、prompt 版本與 LLM 評估流程。",
-        examples: [
-            "請用 langfuse 幫我規劃這個 AI 功能的 trace 與評估指標。",
-            "請幫我設計 prompt 版本管理與失敗案例回收流程。"
-        ],
-        recommendationReason: "沒有觀測就沒有長期改善。這是 AI 產品從 demo 走向生產的分水嶺。",
-        link: "https://github.com/hjuming/skills"
-    },
-    {
-        id: "agent-evaluation",
-        name: "agent-evaluation",
-        icon: "EVAL",
-        category: "trust",
-        categoryName: "安全與可信",
-        level: "進階",
-        persona: "需要評估 Agent 品質的人",
-        description: "協助建立 Agent 評測、行為測試、基準與失敗案例分析，避免只憑感覺判斷好壞。",
-        examples: [
-            "請用 agent-evaluation 幫我設計這個 Agent 的評測集。",
-            "請把這些失敗案例整理成可重跑的 eval checklist。"
-        ],
-        recommendationReason: "優質 Skills 不只教 AI 做事，也要教 AI 怎麼知道自己做得對不對。",
-        link: "https://github.com/hjuming/skills",
-        featured: true
-    },
-    {
-        id: "agent-process-guard",
-        name: "agent-process-guard",
-        icon: "護",
-        category: "ai",
-        categoryName: "AI 工程",
-        level: "進階",
-        persona: "長時間對話後還會開大量本機服務的人",
-        description: "AI coding 任務前置守門，先判斷命令是有限、長跑還是互動型，協助套用 timeout、背景執行、日誌與退出策略，避免 terminal 卡住與孤兒進程。",
-        examples: [
-            "請先用 agent-process-guard 盤點本次工作會用到的 npm / python / docker 常駐命令。",
-            "請幫我改寫這段部署腳本，加入 agent-process-guard 的背景與清理流程。"
-        ],
-        recommendationReason: "當 AI 開始執行實際開發流程，process 管理常常是穩定性交付的第一道保險線。",
-        link: "https://github.com/yanowo/agent-process-guard"
     },
     {
         id: "ai-citation-engineering",
@@ -456,22 +308,6 @@ const skillsData = [
             "請檢查這段程式是否有 token 外洩、過度授權或輸入驗證問題。"
         ],
         recommendationReason: "凡是會碰到資料與工具權限的 Agent，都需要安全工作流。",
-        link: "https://github.com/hjuming/skills"
-    },
-    {
-        id: "video-editing-setup",
-        name: "video-editing-setup",
-        icon: "SET",
-        category: "content",
-        categoryName: "內容與溝通",
-        level: "進階",
-        persona: "想安全準備 AI 剪輯環境的人",
-        description: "先檢查 video-use、FFmpeg、ffprobe、轉寫憑證與選用動畫環境，列出變更並取得同意後才安裝。",
-        examples: [
-            "請用 video-editing-setup 檢查我的短影音剪輯環境，先不要安裝或上傳素材。",
-            "FFmpeg 和 video-use 無法使用，請先診斷並列出安全修復步驟。"
-        ],
-        recommendationReason: "把環境變更與實際剪片分開，能避免 Agent 靜默安裝、洩漏憑證或誤動既有 repo。",
         link: "https://github.com/hjuming/skills"
     },
     {

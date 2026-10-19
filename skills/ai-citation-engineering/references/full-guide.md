@@ -528,7 +528,7 @@ EEAT = Experience(0.20) + Expertise(0.30)
 ```
 seo-audit → 確保技術基礎健康
    ↓
-content-creator → 產生內容初稿
+wedo-writing-os → 產生內容初稿
    ↓
 ai-citation-engineering → 重組為 AFB + Citations
    ↓
@@ -540,7 +540,7 @@ analytics-tracking → 追蹤引用與品牌搜尋
 **組合 A：內容網站**
 ```
 1. seo-audit（技術檢查）
-2. content-creator（內容產出）
+2. wedo-writing-os（內容產出）
 3. ai-citation-engineering（AI 優化）
 4. analytics-tracking（成效追蹤）
 ```
@@ -631,7 +631,7 @@ Phase 3 完成後，將在 `examples/case_studies/` 中補充實際測試數據�
 ## 相關 Skills
 
 - **seo-audit**: 技術 SEO 基礎檢查
-- **content-creator**: 內容創作與品牌聲音
+- **wedo-writing-os**: 內容創作與品牌聲音
 - **seo-content-writer**: 傳統 SEO 內容優化
 - **copywriting**: 轉換導向文案
 - **programmatic-seo**: 規模化 SEO 策略

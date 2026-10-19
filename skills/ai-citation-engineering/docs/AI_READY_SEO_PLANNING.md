@@ -3143,7 +3143,7 @@ SEO（Search Engine Optimization）是透過優化網站內容和結構，
 是否與現有 SEO 技能整合？
 - [ ] 獨立技能（推薦）
 - [ ] 整合進 `seo-audit`
-- [ ] 整合進 `content-creator`
+- [ ] 整合進 `wedo-writing-os`
 - [ ] 創建 SEO 技能套件
 
 **建議**：獨立技能，但提供與其他技能的協作指引
@@ -3159,7 +3159,7 @@ AI-Ready SEO 技能不是孤立存在的，它應該與現有的 SEO 和內容 S
 | Skill 名稱 | 關係類型 | 協作場景 | 工作流程 |
 |-----------|---------|---------|---------|
 | **seo-audit** | 🔄 互補 | 技術 SEO 基礎檢查 | 先用 seo-audit 確保技術健康 → 再用 AI-Ready SEO 優化內容結構 |
-| **content-creator** | 🤝 協作 | 內容創作與優化 | 使用 content-creator 產生初稿 → AI-Ready SEO 調整為 AI 友善格式 |
+| **wedo-writing-os** | 🤝 協作 | 內容創作與優化 | 使用 wedo-writing-os 產生初稿 → AI-Ready SEO 調整為 AI 友善格式 |
 | **seo-content-writer** | 🤝 協作 | SEO 內容撰寫 | 傳統 SEO 關鍵字優化 + AI-Ready 結構化增強 |
 | **copywriting** | 🤝 協作 | 行銷文案優化 | 用 copywriting 創作轉換導向文案 → AI-Ready SEO 增加引用價值 |
 | **programmatic-seo** | 🔄 互補 | 大規模頁面生成 | Programmatic SEO 生成頁面 → AI-Ready SEO 確保每頁 AI 可引用 |
@@ -3174,7 +3174,7 @@ AI-Ready SEO 技能不是孤立存在的，它應該與現有的 SEO 和內容 S
 ```mermaid
 graph LR
     A[需求分析] --> B[seo-audit 技術檢查]
-    B --> C[content-creator 內容初稿]
+    B --> C[wedo-writing-os 內容初稿]
     C --> D[AI-Ready SEO 結構優化]
     D --> E[copywriting 文案潤色]
     E --> F[發布]
@@ -3187,7 +3187,7 @@ graph LR
    - 檢查 Core Web Vitals
    - 驗證 Schema 標記基礎
 
-2. **Phase 2 - 內容創作**（使用 `content-creator` 或 `seo-content-writer`）
+2. **Phase 2 - 內容創作**（使用 `wedo-writing-os` 或 `seo-content-writer`）
    - 關鍵字研究
    - 品牌聲音分析
    - 初稿撰寫
@@ -3272,7 +3272,7 @@ graph LR
 
 ---
 
-#### 2. content-creator（內容產出）
+#### 2. wedo-writing-os（內容產出）
 **提供給 AI-Ready SEO**：
 - ✅ 品牌聲音分析結果
 - ✅ SEO 優化初稿
@@ -3287,7 +3287,7 @@ graph LR
 
 **協作範例**：
 ```
-content-creator 生成：
+wedo-writing-os 生成：
 "我們的產品幫助企業優化工作流程，提升效率..."
 
 AI-Ready SEO 優化：
@@ -3387,7 +3387,7 @@ AI-Ready SEO 優化：
 #### 組合 A：內容網站 AI 優化
 ```
 1. seo-audit (檢查基礎)
-2. content-creator (產出內容)
+2. wedo-writing-os (產出內容)
 3. AI-Ready SEO (優化結構)
 4. analytics-tracking (追蹤成效)
 ```
@@ -3414,7 +3414,7 @@ AI-Ready SEO 優化：
 
 #### 可重用的工具（從現有 Skills）
 
-**來自 content-creator**：
+**來自 wedo-writing-os**：
 - `brand_voice_analyzer.py` - 分析品牌聲音一致性
 - `seo_optimizer.py` - 傳統 SEO 優化檢查
 
@@ -3446,7 +3446,7 @@ python schema_generator.py draft.md              # Schema 生成
 
 #### 2. 共享內容模板
 建立跨 Skill 的內容模板庫：
-- 結合 `content-creator` 的框架
+- 結合 `wedo-writing-os` 的框架
 - 加入 `AI-Ready SEO` 的結構要求
 - 符合 `copywriting` 的轉換原則
 
@@ -3460,7 +3460,7 @@ python schema_generator.py draft.md              # Schema 生成
 ```
 發布內容 → analytics-tracking 收集數據 
 → AI-Ready SEO 分析表現 → 優化策略 
-→ 更新 content-creator 模板 → 發布新內容
+→ 更新 wedo-writing-os 模板 → 發布新內容
 ```
 
 ---
@@ -3485,7 +3485,7 @@ python schema_generator.py draft.md              # Schema 生成
 
 ### 現有 Skills 參考
 - [ ] `/skills/seo-audit/SKILL.md` - 技術 SEO 審查框架
-- [ ] `/skills/content-creator/SKILL.md` - 內容創作與品牌聲音
+- [ ] `/skills/wedo-writing-os/SKILL.md` - 內容創作與品牌聲音
 - [ ] `/skills/seo-content-writer/SKILL.md` - SEO 內容撰寫
 - [ ] `/skills/copywriting/SKILL.md` - 轉換導向文案
 - [ ] `/skills/programmatic-seo/SKILL.md` - 規模化 SEO 策略

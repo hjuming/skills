@@ -12,8 +12,8 @@
     { "query": "從 Gmail 讀取訂單信、自動寫入 Google Sheets，再寄出確認信", "should_trigger": false, "expected_skill": null },
     { "query": "把這份數據報告做成 12 頁可簡報的 PowerPoint，要有圖表與 speaker notes", "should_trigger": false, "expected_skill": "pptx" },
     { "query": "幫我在這份 Word 合約加入修訂記號、批註和頁眉，保留原排版", "should_trigger": false, "expected_skill": "docx" },
-    { "query": "這批 CSV 要匯入 PostgreSQL，請設計 schema、COPY 指令與去重 SQL", "should_trigger": false, "expected_skill": "sql-pro" },
-    { "query": "用 pandas 訓練一個預測模型，輸入是 CSV，只需輸出 Python 分析結果，不產生試算表", "should_trigger": false, "expected_skill": "python-pro" },
+    { "query": "這批 CSV 要匯入 PostgreSQL，請設計 schema、COPY 指令與去重 SQL", "should_trigger": false, "expected_skill": "supabase-postgres-best-practices" },
+    { "query": "用 pandas 訓練一個預測模型，輸入是 CSV，只需輸出 Python 分析結果，不產生試算表", "should_trigger": false, "expected_skill": "fastapi-pro" },
     { "query": "這段文章提到 Excel，請翻成英文", "should_trigger": false, "expected_skill": null },
     { "query": "把附件中的季度試算表新增一張摘要頁，延伸計算欄並維持原有格式。", "should_trigger": true, "expected_skill": "xlsx" }
   ]

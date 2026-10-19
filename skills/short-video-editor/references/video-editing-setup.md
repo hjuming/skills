@@ -1,8 +1,6 @@
----
-name: video-editing-setup
-description: Set up, audit, repair, or verify a local AI short-video editing environment using video-use, FFmpeg, ffprobe, transcription credentials, and optional HyperFrames. Use for 影片剪輯環境、短影音工具安裝、FFmpeg／video-use 檢查、ElevenLabs 設定或剪輯環境修復. Do not use to edit media, transcribe a supplied video, or answer generic Premiere Pro or CapCut questions.
-license: MIT; adapted from Jaycheng1103/chatgpt-video-editing-skills
----
+# video-editing-setup（2026-10-19 併入 `short-video-editor`）
+
+> 原 Skill `video-editing-setup` 的內容，2026-10-19 SSOT 精簡時併入。license：MIT; adapted from Jaycheng1103/chatgpt-video-editing-skills。原資料夾（含 evals、agents 與未搬的檔案）封存於 `skills-wedo/_archive/2026-10-19-ssot-slimming/video-editing-setup/`。文中路徑以 `short-video-editor` 根目錄為準。
 
 # Video Editing Setup
 
@@ -22,7 +20,7 @@ Do not use for:
 
 ## Workflow
 
-1. Read [setup-runbook.md](references/setup-runbook.md) and [security.md](references/security.md).
+1. Read [setup-runbook.md](references/video-editing-setup/references/setup-runbook.md) and [security.md](references/video-editing-setup/references/security.md).
 2. Inspect before mutation: paths, exact Git origin, branch/commit, clean status, tool versions, and active Skills registration. Treat a non-repository path, wrong origin, dirty checkout, or unsupported runtime as a hard stop.
 3. List every proposed mutation—clone, pull, dependency install, large download, symlink, credential storage—and obtain explicit approval.
 4. After approval, repeat the preflight immediately before mutation. Install the complete `video-use` repository; do not copy only one Skill file. HyperFrames is optional and only relevant to an approved HTML/CSS/GSAP animation workflow.
