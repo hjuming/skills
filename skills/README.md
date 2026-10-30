@@ -3,10 +3,11 @@
 Generated from the WEDO-maintained public selection.
 Regenerate through the maintainer export workflow; do not edit this directory by hand.
 
-## Included (21)
+## Included (23)
 
 - ai-citation-engineering
 - ai-engineer
+- analytics-tracking
 - api-security-best-practices
 - copywriting
 - doc-coauthoring
@@ -18,6 +19,7 @@ Regenerate through the maintainer export workflow; do not edit this directory by
 - pdf
 - plan-writing
 - pptx
+- seo-audit
 - seo-content-writer
 - short-video-editor
 - systematic-debugging

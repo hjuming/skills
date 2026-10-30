@@ -21,7 +21,7 @@ Skills WEDO 的目標，是幫 AI 初學者跨過「知道 Skills 有用」到�
 
 ## 精選 Skills（可直接取用）
 
-本倉庫的 [`skills/`](skills/) 收錄 **31 個精選、通用、初學者友善的 Skills**，由 WEDO 的私有 SSOT 匯出。完整清單見 [`skills/README.md`](skills/README.md)，涵蓋文件（`pdf`、`docx`、`xlsx`、`pptx`）、內容（`humanizer-zh-tw`、`copywriting`、`seo-content-writer`）、開發（`typescript-expert`、`nextjs-app-router-patterns`）、除錯與測試（`systematic-debugging`、`test-driven-development`）、AI 工程（`mcp-builder`、`rag-engineer`、`langgraph`）與基礎工作流（`skill-creator`、`prompt-engineering`、`plan-writing`）等。
+本倉庫的 [`skills/`](skills/) 收錄 **23 個精選、通用、跨專案可用的 Skills**，由 WEDO 的私有 SSOT 匯出。完整清單見 [`skills/README.md`](skills/README.md)，涵蓋文件（`pdf`、`docx`、`xlsx`、`pptx`）、內容與搜尋（`humanizer-zh-tw`、`copywriting`、`seo-content-writer`、`seo-audit`、`analytics-tracking`）、開發（`typescript-expert`、`nextjs-app-router-patterns`）、除錯與測試（`systematic-debugging`、`test-driven-development`）、AI 工程（`mcp-builder`、`rag-engineer`、`langgraph`）與基礎工作流（`skill-creator`、`prompt-engineering`、`plan-writing`）等。
 
 安裝一個 Skill，就是把**整個資料夾**複製到你的工具目錄：
 
@@ -52,12 +52,12 @@ python3 -m http.server 4190 --bind 127.0.0.1
 
 ### 專案參與指標
 
-最後更新：`2026-07-28`（自動更新）
+最後更新：`2026-10-26`（自動更新）
 
-- GitHub Stars（本前台倉庫 `hjuming/skills`）：`1`
+- GitHub Stars（本前台倉庫 `hjuming/skills`）：`3`
 - 每月網站到訪（或轉換）量：`待接 Cloudflare 權杖或 Zone ID`
 - 每月 issue / PR：`Issue 開啟 0 / 關閉 0；PR 開啟 0 / 關閉 0`
-- 每季主要更新次數：`84`
+- 每季主要更新次數：`41`
 
 #### 自動更新
 

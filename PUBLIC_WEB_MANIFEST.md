@@ -90,6 +90,7 @@ allow-file favicon_io/site.webmanifest
 allow-tree skills
 selected-skill ai-citation-engineering
 selected-skill ai-engineer
+selected-skill analytics-tracking
 selected-skill api-security-best-practices
 selected-skill copywriting
 selected-skill doc-coauthoring
@@ -101,6 +102,7 @@ selected-skill nextjs-app-router-patterns
 selected-skill pdf
 selected-skill plan-writing
 selected-skill pptx
+selected-skill seo-audit
 selected-skill seo-content-writer
 selected-skill short-video-editor
 selected-skill systematic-debugging

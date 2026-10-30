@@ -68,6 +68,38 @@ const skillsData = [
         link: "https://github.com/hjuming/skills"
     },
     {
+        id: "analytics-tracking",
+        name: "analytics-tracking",
+        icon: "GA",
+        category: "growth",
+        categoryName: "量測與搜尋",
+        level: "進階入門",
+        persona: "需要確認數據是否可信的人",
+        description: "規劃 GA4、GTM、Search Console 與 Bing Webmaster 的量測設定、事件驗證與正式站讀回。",
+        examples: [
+            "請用 analytics-tracking 為這個網站設計 GA4/GTM 事件表，列出訊號、觸發條件與驗證方式。",
+            "請依 analytics-tracking 核對 Search Console 和 Bing 的網站驗證、sitemap 與目前狀態。"
+        ],
+        recommendationReason: "讓量測設定、事件觸發、平台收到資料與索引狀態各自有證據可查。",
+        link: "https://github.com/hjuming/skills"
+    },
+    {
+        id: "seo-audit",
+        name: "seo-audit",
+        icon: "SEO",
+        category: "growth",
+        categoryName: "量測與搜尋",
+        level: "進階入門",
+        persona: "需要診斷網站搜尋表現的人",
+        description: "檢查網站技術 SEO、頁面內容與搜尋可見度，整理有依據的問題和改善建議。",
+        examples: [
+            "請用 seo-audit 檢查這個網站的索引、metadata、結構化資料與內部連結。",
+            "請把這份 Search Console 證據整理成 SEO 問題、影響範圍與優先修正項目。"
+        ],
+        recommendationReason: "把搜尋診斷與實際量測設定分開，先確認問題再決定要改什麼。",
+        link: "https://github.com/hjuming/skills"
+    },
+    {
         id: "doc-coauthoring",
         name: "doc-coauthoring",
         icon: "協",
